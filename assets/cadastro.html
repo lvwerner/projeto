@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="esquecin.css"> 
-    <title>Esqueci minha senha</title>
+	<meta charset="UTF-8">
+	<title>Cadastrar</title>
     <link rel="shortcut icon"
     href="https://i.pinimg.com/originals/bf/96/ca/bf96ca5e805812a91b3eaf41d4901a16.png"
     type="image/x-icon">
+	<link rel="stylesheet" href="cadastro.css">
+</head>
+<style>
+	</style>
 </head>
 <body>
-    <div class="principal">
+    <div class="principal"> 
         <div class="cabecalho">
             <div class="log1">
             <div class="logo">
@@ -31,8 +32,9 @@
                 <button class="btn2"><a class="anone2" href="Produto.html">Produtos</a></button>
                 <button class="btn2"><a class="anone2" href="sobre nós.html">Sobre</a></button>
                 <button class="btn2"><a class="anone2" href="contatinho.html">Contato</a></button>
-        
-            </div>
+            
+                </div>
+                
             <div class="coração2">
             <button class="coração"><a href="#">
                 <svg viewBox="0 0 17.503 15.625" height="20.625" width="20.503" xmlns="http://www.w3.org/2000/svg" class="icon">
@@ -51,20 +53,44 @@
                 </div> 
             </div>
         </div>
-        <div class="form-container">
-            <form class="form">
-                <div class="titulo"><b>Esqueceu sua senha?</b></div>
-                <br>
-                <div class="input-group">
-                    <label for="username">Email</label>
-                    <input type="text" name="username" id="username" placeholder="">
-                </div>
-                <br>
-                <br>
-            
-                <button class="sign"><a class="anone3" href="verificação.html">Próximo</a></button>
-                </button>
-    <div class="rodape">  
-    </div>
-    </body>
-    </html>
+	<div class="box">
+		<form autocomplete="off">
+			<div class="inputBox">
+
+			<h2>Nome</h2>
+			<i></i>
+            <input class="nome" id="cadastrousuario" type="text" aria-label="Digite seu nome" placeholder="Digite seu nome"  required>
+<br>
+            <h2>Sobrenome</h2>
+			<i></i>
+            <input class="nome"id="cadastrousuario" type="text" aria-label="Digite seu nome" placeholder="Digite seu sobrenome"  required>
+<br>
+            <h2>CPF</h2>
+			<i></i>
+            <input class="nome" id="cadastrousuario" min="11" max="11" type="text" aria-label="Digite seu CPF" placeholder="xxx.xxx.xxx-xx" pattern="\d{3}.\d{3}.\d{3}-\d{2}" required >
+<br>
+            <h2>Email</h2>
+			<i></i>
+			<input class="nome" id="cadastrousuario" type="email" aria-label="Digite seu email" placeholder="Digite seu email" pattern="email" required>
+<br>		
+			<h2>Data de Nascimento</h2>
+			<i></i>
+            <input class="nome" id="cadastrousuario" type="date" aria-label="Digite sua data de Nascimento" required>
+<br>
+			<h2>Senha</h2>
+			<i></i>
+			<input class="nome" id="nome" type="password" aria-label="senha" placeholder="Insira sua senha" required>
+<br>
+			<h2>Confirme sua senha</h2>
+			<i></i>
+			<input class="nome" id="cadastrousuario" type="password" aria-label="senha" placeholder="Confirme sua senha" requird>
+<br>
+<br>
+			<input type="submit" value="Cadastro">
+		</form>
+	</div>
+	
+	<div class="rodape"> </div>
+        
+
+</a></body></html>

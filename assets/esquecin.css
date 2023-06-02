@@ -11,7 +11,7 @@ body{
 .cabecalho > div {
     width: 100%;
     height: 100%;
-    background-color: rgba(22, 141, 107, 0.63);
+    background-color: transparent;
     color: black;
 }
 .botao {
@@ -42,7 +42,7 @@ body{
     text-decoration: none;
 }
 .botao:hover >a{
-    background-color: rgb(26, 121, 94);
+    background-color: rgba(22, 141, 107, 0.63);
 }
 .botao2{
     height: 50%;
@@ -94,28 +94,33 @@ body{
     text-align: center;
     display: block;
     block-size: 100px;
+    margin-left: 22px;
 }
 .logo > img{
     left: 10px;
-    /* filter: drop-shadow(0 0 10px rgb(0, 255, 208)); */
+    filter: drop-shadow(0 0 3px green);
 }
+/* .logo > div{ */
+    /* margin: 10px; */
+    /* width: 40px;
+    height: 40px;
+    align-items: center;
+    
+} */
 .rodape{
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     height: 30px;
-    background-color: rgba(26, 121, 94, 0.664);
+    background-color: rgba(91, 202, 171, 0.829);
     color: white;
     text-align: right;
     /* padding: 15px; */
 }
-.insta {
-    margin-top: 5px; 
-}
 
 .mainmenubtn {
-    background-color: transparent;
+    /* background-color: rgba(22, 141, 107, 0.63);  */
     color: white;
     border: none;
     font-size: 30px;
@@ -127,7 +132,7 @@ body{
     overflow: hidden;
 }
 .mainmenubtn:hover {
-    background-color: transparent;
+    /* background-color: rgba(22, 141, 107, 0.63); */
     left: 100px;
 }
 .dropdown {
@@ -146,7 +151,9 @@ body{
     
 }
 .dropdown-child a {
-    color:rgb(26, 121, 94);
+    color: black;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 20px;
     text-decoration: none;
     display: block;
@@ -165,7 +172,6 @@ body{
     height: 2em;
     margin: 0.5em;
     top: 2vh;
-    padding-left: 2vw;
     left: 10vw;
     background: black;
     color: white;
@@ -186,7 +192,7 @@ button:hover {
 
 button:after {
     content: "";
-    /* background: rgba(0, 250, 121, 0.534); */
+    /* background: rgba(22, 141, 107, 0.63); */
     position: absolute;
     z-index: -1;
     left: -20%;
@@ -209,10 +215,10 @@ button:hover:after {
         margin: 0.5em;
         left: 5vw;
         top: 2.5vh;
-        background: rgb(255, 255, 255);
+        background: transparent;
         color: rgb(0, 0, 0);
-        border: none;
-        border-radius: 20px;
+        border: 2px solid rgb(233, 231, 231);
+        border-radius: 15px;
         text-decoration: none;
         font-size: 15px;
         font-family: 'Bebas Neue', ;
@@ -227,8 +233,15 @@ button:hover:after {
 }
 .anone2{
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(233, 231, 231);
 }
+
+.anone3{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
 .coração {
     display: flex;
     align-items: center;
@@ -236,7 +249,7 @@ button:hover:after {
     width: 50px;
     height: 110px;
     margin-top: -10px;
-    margin-left: 350px;
+    margin-left: 320px;
     margin-right: 0;
     /* border-radius: 10px; */
     border: none;
@@ -283,9 +296,7 @@ button:hover:after {
     opacity: 1;
     top: 105%;
 }
-.coração2{
-    
-}
+
 .group {
     display: flex;
     line-height: 28px;
@@ -307,7 +318,7 @@ button:hover:after {
     outline: none;
     background-color: #D9E8D8;
     color: #0d0c22;
-    box-shadow: 0 0 5px rgb(19, 139, 109), 0 0 0 10px #f5f5f5eb;
+    box-shadow: 0 0 5px rgba(22, 141, 107, 0.63), 0 0 0 10px #f5f5f5eb;
     transition: .3s ease;
     }
 
@@ -330,7 +341,7 @@ button:hover:after {
     bottom: 0;
     width: 100%;
     height: 30px;
-    background-color: rgba(22, 141, 107, 0.63);
+    background-color: rgba(91, 202, 171, 0.829);
     color: white;
     text-align: right;
     /* padding: 15px; */
@@ -362,18 +373,20 @@ button:hover:after {
 .principal {
     width: 100%;
     height: 100vh;
-    background-color: rgb(207, 207, 207);
+    background-color: #0d1117;
 }
 
 .form-container {
     width: 330px;
     border-radius: 0.75rem;
-    background-color: rgb(197 193 193);
+    background-color: #0d1117;
     padding: 23px;
     color: rgba(243, 244, 246, 1);
     margin-top: 18vh;
     margin-left: 35vw;
     position:absolute;
+    border-radius: 10px;
+    border: 1px solid rgb(182, 182, 182);
   }
   
   .title {
@@ -395,7 +408,7 @@ button:hover:after {
   
   .input-group label {
     display: block;
-    color: black;
+    color: rgb(233, 231, 231);
     margin-bottom: 4px;
   }
   
@@ -435,7 +448,7 @@ button:hover:after {
   .sign {
     display: block;
     width: 100%;
-    background-color: rgba(22, 141, 107, 0.63);
+    background-color: rgba(91, 202, 171, 0.829);
     padding: 0.75rem;
     text-align: center;
     color: rgba(17, 24, 39, 1);
@@ -447,7 +460,7 @@ button:hover:after {
   .sing> a{
     display: block;
     width: 100%;
-    background-color: rgba(22, 141, 107, 0.63);
+    background-color: rgba(91, 202, 171, 0.829);
     padding: 0.75rem;
     text-align: center;
     color: rgba(17, 24, 39, 1);
@@ -504,7 +517,7 @@ button:hover:after {
   
 .titulo{
     font-size: 20px;
-    color: black;
+    color: rgb(233, 231, 231);
     text-align: center;
 }
 

@@ -1,6 +1,175 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*
+{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
+body 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(207, 207, 207);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+}
+.box {
+    height: 500px;
+    width: 400px;
+    border-radius: 0.75rem;
+    background-color: rgb(197 193 193);
+    padding: 2rem;
+    color: rgba(243, 244, 246, 1);
+    margin-top: 15vh;
+    margin-left: 35vw;
+    position:absolute;
+    
+  }
+
+form 
+{
+    position: absolute;
+    inset: 2px;
+    background: #0d1117;
+    padding: 8px 18px;
+    border-radius: 10px;
+    border: 1px solid rgb(182, 182, 182);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+}
+h2 
+{
+    color:rgb(233, 231, 231);
+    font-size: 14px;
+    text-align: center;
+    margin-top: 12px;
+    /* letter-spacing: 0.1em; */
+}
+.inputBox 
+{
+    position: relative;
+    width: 300px;
+
+}
+.inputBox input 
+{
+    position: relative;
+    width: 100%;
+    height: 20px;
+    padding: 8px 8px 8px;
+    /* background: transparent; */
+    outline: none;
+    box-shadow: none;
+    border: none;
+    color: rgb(233, 231, 231);
+    /* font-size: 15px; */
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+}
+.inputBox span 
+{
+    position: absolute;
+    left: 0;
+    padding: 8px 0px 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgb(233, 231, 231);
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span 
+{
+    color: #000000;
+    transform: translateX(0px) translateY(-34px);
+    font-size: 0.75em;
+}
+.inputBox i 
+{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    /* background:  rgb(233, 231, 231); */
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+}
+.inputBox input:valid ~ i,
+.inputBox input:focus ~ i 
+{
+    height: 44px;
+}
+.links 
+{
+    display: flex;
+    justify-content: space-between;
+}
+.links a 
+{
+    margin: 10px 0;
+    font-size: 0.75em;
+    color: #000000;
+    text-decoration: beige;
+}
+.links a:hover, 
+.links a:nth-child(2)
+{
+    color:  #000000;
+}
+input[type="submit"]
+{
+    border: none;
+    outline: none;
+    padding: 8px 25px;
+    background:  rgb(26, 121, 94);
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 600;
+    width: 140px; 
+    height: 40px;
+    /* margin-left: 6vw; */
+    /* margin-bottom: 10px; */
+    /* margin-top: 10px; */
+}
+input[type="submit"]:active 
+{
+    opacity: 0.5;
+}
+
+.nome{
+    font-size: 11px;
+    position: relative;
+    width: 100%;
+    height: 20px;
+    padding: 8px 8px 8px;
+    background:  #242931;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    color: rgb(233, 231, 231);
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.cadastrousuario{
+    font-size: 10px;
+    color: rgb(233, 231, 231);
+}
+
 .cabecalho{
     width: 100%;
     height: 100px;
@@ -25,7 +194,7 @@ body{
     
 }
 .botao > a{
-    color: white;
+    color: transparent;
     /* justify-content: space-between 50px; */
     font-family: sans-serif;
     font-size: 10px ;
@@ -42,34 +211,9 @@ body{
     text-decoration: none;
 }
 .botao:hover >a{
-    background-color: rgb(26, 121, 94);
+    background-color: rgba(22, 141, 107, 0.63);
 }
-.botao2{
-    height: 50%;
-    /* width: 25px; */
-    display: inline-grid;
-    grid-template-columns: repeat(2, 130px);
-    grid-gap: 0px;
-    /* margin-top: 25px;  */
-    color: white;
-    text-decoration-color: black;
-}
-.botao2 > a{
-    text-decoration: none;
-    /* height: 35px;
-    width: 125px;
-    border: 1px solid white;
-    border-radius: 35px;
-    justify-content: space-between;
-    text-align: center;
-    color: rgb(0, 0, 0);
-    font-family: Verdana;
-    font-size: 15px;
-    margin: 25px 10px 10px;
-    /* padding: 10px; */
-    background-color: white;
-    cursor: pointer; 
-}
+
      
 
 
@@ -94,10 +238,11 @@ body{
     text-align: center;
     display: block;
     block-size: 100px;
+    margin-left: 22px;
 }
 .logo > img{
     left: 10px;
-    filter: drop-shadow(0 0 2px green);
+    filter: drop-shadow(0 0 3px green);
 }
 /* .logo > div{ */
     /* margin: 10px; */
@@ -106,46 +251,6 @@ body{
     align-items: center;
     
 } */
-.principal {
-    width: 100%;
-    height: 100vh;
-    background-position: fixed;
-    background-image: url("https://www.10wallpaper.com/wallpaper/1366x768/1408/Beautiful_night_scenery_Galaxy_HD_Wallpaper_05_1366x768.jpg");
-    background-size: 100vw 100vh;
-    background-repeat: no-repeat;
-    font-family:sans-serif;
-}
-.principal >img{
-    width: 1;
-    height: 50%;
-    
-}
-.titulo{
-    font-size: 120px;
-    font-family: 'Alfa Slab One', coursive;
-    margin: 8vh 0 0 8vw;
-    /* color: rgb(0, 0, 0); */
-    background: -webkit-linear-gradient(#dbdbdb, #03eebb);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    position: absolute;
-
-}
-.subtitulo{
-    font-size: 20px;
-    /* font-family:Tahoma; */
-    font-style: oblique;
-    margin: 28vh 0 0 45px;
-    text-align: right;
-    /* background-color: rgba(96, 216, 156, 0.461); */
-    width: 580px;
-    height: 60px;
-    border-radius: 10px;
-    font-family: 'Abril Fatface', coursive;
-    color: rgb(255, 255, 255);
-    /* text-shadow: rgba(255, 253, 253, 0.651) 0 0 0px ,#00ffb3b6 0 0 20px; */
-
-}
 .rodape{
     position: fixed;
     left: 0;
@@ -157,12 +262,9 @@ body{
     text-align: right;
     /* padding: 15px; */
 }
-.insta {
-    margin-top: 5px; 
-}
 
 .mainmenubtn {
-    background-color: transparent;
+    /* background-color: rgba(22, 141, 107, 0.63);  */
     color: white;
     border: none;
     font-size: 30px;
@@ -174,7 +276,7 @@ body{
     overflow: hidden;
 }
 .mainmenubtn:hover {
-    background-color: transparent;
+    color: black;
     left: 100px;
 }
 .dropdown {
@@ -193,7 +295,9 @@ body{
     
 }
 .dropdown-child a {
-    color:black;
+    color: black;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 20px;
     text-decoration: none;
     display: block;
@@ -213,9 +317,9 @@ body{
     margin: 0.5em;
     top: 2vh;
     left: 10vw;
-    background: transparent;
+    background: black;
     color: white;
-    border: 2px solid rgba(7, 190, 7, 0.856);
+    border: none;
     border-radius: 20px;
     text-decoration: none;
     font-size: 18px;
@@ -232,7 +336,7 @@ button:hover {
 
 button:after {
     content: "";
-    /* background: rgba(0, 250, 121, 0.534); */
+    /* background: rgba(22, 141, 107, 0.63); */
     position: absolute;
     z-index: -1;
     left: -20%;
@@ -245,7 +349,7 @@ button:after {
 
 button:hover:after {
     transform: skewX(-45deg) scale(1, 1);
-    background: rgba(22, 141, 58, 0.63);
+    background: rgba(22, 141, 107, 0.63);
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
     }
@@ -257,8 +361,8 @@ button:hover:after {
         top: 2.5vh;
         background: transparent;
         color: rgb(0, 0, 0);
-        border: 2px solid rgb(233, 231, 231);;
-        border-radius: 20px;
+        border: 2px solid rgb(233, 231, 231);
+        border-radius: 15px;
         text-decoration: none;
         font-size: 15px;
         font-family: 'Bebas Neue', ;
@@ -269,7 +373,7 @@ button:hover:after {
         }
 .anone{
     text-decoration: none;
-    color: rgb(233, 231, 231);
+    color: white;
 }
 .anone2{
     text-decoration: none;
@@ -282,7 +386,7 @@ button:hover:after {
     width: 50px;
     height: 110px;
     margin-top: -10px;
-    margin-left: 180px;
+    margin-left: 320px;
     margin-right: 0;
     /* border-radius: 10px; */
     border: none;
@@ -329,9 +433,7 @@ button:hover:after {
     opacity: 1;
     top: 105%;
 }
-.coração2{
-    
-}
+
 .group {
     display: flex;
     line-height: 28px;
@@ -353,7 +455,7 @@ button:hover:after {
     outline: none;
     background-color: #D9E8D8;
     color: #0d0c22;
-    box-shadow: 0 0 5px rgb(19, 139, 109), 0 0 0 10px #f5f5f5eb;
+    box-shadow: 0 0 5px rgba(22, 141, 107, 0.63), 0 0 0 10px #f5f5f5eb;
     transition: .3s ease;
     }
 
@@ -369,58 +471,21 @@ button:hover:after {
     width: 1rem;
     height: 1rem;
 }
-.card {
-    margin-left: 40px;
-    width: 680px;
-    height: 254px;
-    transition: all 0.2s;
-    position: relative;
-    margin-left: 25vw;
-    }
-
-.card-inner {
-    width: inherit;
-    height: inherit;
-    background: rgba(255,255,255,.05);
-    box-shadow: 0 0 10px rgba(0,0,0,0.25);
-    backdrop-filter: blur(10px);
-    border-radius: 8px;
-    text-align: center;
-    }
-
-/* .card:hover {
-transform: scale(1.04) rotate(1deg);
-} */
-
-.circle {
-    width: 120px;
-    height: 120px;
-    background: radial-gradient(#00fff7, #03bf8d);
-    border-radius: 50%;
-    position: absolute;
-    animation: move-up6 2s ease-in infinite alternate-reverse;
+.rodape{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: rgba(91, 202, 171, 0.829);
+    color: white;
+    text-align: right;
+    /* padding: 15px; */
 }
 
-.circle:nth-child(1) {
-    top: -25px;
-    left: -25px;
-}
-
-.circle:nth-child(2) {
-    bottom: -25px;
-    right: -25px;
-    animation-name: move-down1;
-}
-
-@keyframes move-up6 {
-to {
-transform: translateY(-20px);
-}
-}
-
-@keyframes move-down1 {
-to {
-transform: translateY(20px);
-}
+.principal {
+    width: 100%;
+    height: 100vh;
+    background-color: #0d1117;
 }
 
