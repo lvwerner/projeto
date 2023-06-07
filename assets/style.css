@@ -94,6 +94,7 @@ body{
     text-align: center;
     display: block;
     block-size: 100px;
+    margin-left: 22px;
 }
 .logo > img{
     left: 10px;
@@ -282,9 +283,6 @@ button:hover:after {
     visibility: visible;
     opacity: 1;
     top: 105%;
-}
-.coração2{
-    
 }
 .group {
     display: flex;

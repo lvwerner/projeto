@@ -375,7 +375,7 @@ transform: scale(1.04) rotate(1deg);
     transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
     background-image: url('https://wallpapercave.com/wp/wp4130086.jpg');
     /* background: linear-gradient(to top, #0a3394, #4286f4); */
-    background-size: 100%;
+    background-size: 110%;
   }
   
   /*Description */
@@ -388,29 +388,17 @@ transform: scale(1.04) rotate(1deg);
     color: #212121;
     height: 70%;
     bottom: 0;
+    top: 25vh;
     border-radius: 16px;
     transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
     padding: 1rem;
     width: 18.4vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva;
   }
-  
-  /*Text*/
-  .text-title {
-    font-size: 1.3rem;
-    font-weight: 700;
-  }
-  
-  .text-body {
-    font-family: 'Josefin Sans', coursive;
-    font-size: 0.8rem;
-    line-height: 130%;
-    text-align: left;
-  }
-  
-  
+ 
   /* Hover states */
   .cardvan:hover .cardvan-description {
-    transform: translateY(60%);
+    transform: translateY(-60%);
   }
   .cardvan2{
     height: 240px;
@@ -444,6 +432,7 @@ transform: scale(1.04) rotate(1deg);
     color: #212121;
     height: 70%;
     bottom: 0;
+    top: 25vh;
     border-radius: 16px;
     transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
     padding: 1rem;
@@ -452,12 +441,14 @@ transform: scale(1.04) rotate(1deg);
   
   /*Text*/
   .text-title {
+    margin-top: -0.2vh;
     font-size: 1.3rem;
     font-weight: 700;
+    font-family: 'Mate SC', coursive;
   }
   
   .text-body {
-    font-family: 'Josefin Sans', coursive;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 0.8rem;
     line-height: 130%;
     text-align: left;
@@ -466,19 +457,20 @@ transform: scale(1.04) rotate(1deg);
   
   /* Hover states */
   .cardvan2:hover .cardvan-description2 {
-    transform: translateY(60%);
+    transform: translateY(-60%);
   }
   .cardvan3{
     height: 240px;
     width: 280px;
     position: absolute;
-    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all -0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
     border-radius: 16px;
     box-shadow: 0 0 20px 8px #d0d0d0;
     overflow: hidden;
     margin: 70px 0 0 750px;
     text-align: center;
   }
+  
   .cardvan-image3 {
     height: 100%;
     width: 100%;
@@ -500,29 +492,15 @@ transform: scale(1.04) rotate(1deg);
     color: #212121;
     height: 70%;
     bottom: 0;
+    top: 25vh;
     border-radius: 16px;
     transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
     padding: 1rem;
     width: 18.4vw;
   }
-  
-  /*Text*/
-  .text-title {
-    font-size: 1.3rem;
-    font-weight: 700;
-  }
-  
-  .text-body {
-    font-family: 'Josefin Sans', coursive;
-    font-size: 0.8rem;
-    line-height: 130%;
-    text-align: left;
-  }
-  
-  
   /* Hover states */
   .cardvan3:hover .cardvan-description3 {
-    transform: translateY(60%);
+    transform: translateY(-60%);
   }
   
   
@@ -546,10 +524,10 @@ transform: scale(1.04) rotate(1deg);
     margin: 50vh 0 0 10vw;
     border-radius: 15px;
     padding: 10px 20px;
-    background-color: black;
+    background-color: rgb(22, 141, 107);
     text-decoration: none;
     color: white;
-    filter: drop-shadow(0 0 5px rgb(0, 255, 149));
+    filter: drop-shadow(0 0 5px black);
 
 }
 .vermais2{
@@ -558,10 +536,10 @@ transform: scale(1.04) rotate(1deg);
     margin: 50vh 0 0 36vw;
     border-radius: 15px;
     padding: 10px 20px;
-    background-color: black;
+    background-color: rgb(22, 141, 107);
     text-decoration: none;
     color: white;
-    filter: drop-shadow(0 0 5px rgb(0, 255, 149));
+    filter: drop-shadow(0 0 5px black);
 
 }
 .vermais3{
@@ -570,8 +548,8 @@ transform: scale(1.04) rotate(1deg);
     margin: 50vh 0 0 61vw;
     border-radius: 15px;
     padding: 10px 20px;
-    background-color: black;
+    background-color: rgb(22, 141, 107);
     text-decoration: none;
     color: white;
-    filter: drop-shadow(0 0 5px rgb(0, 255, 149));
+    filter: drop-shadow(0 0 5px black);
 }
