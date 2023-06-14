@@ -373,7 +373,7 @@ button:hover:after {
 }
 
 .contorno{
-    height: 35vh;
+    height: 32vh;
     width: 24vw;
     box-shadow: 0 0 10px rgb(0, 196, 121);
     margin: 2vh 0 0 -4vw;
@@ -424,7 +424,7 @@ button:hover:after {
     transform: translateX(-300%);
   }
 
-  .slideshow button2 {
+  .slideshow button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -437,11 +437,11 @@ button:hover:after {
     font-size: 24px;
   }
 
-  .slideshow button2.prev {
+  .slideshow button.prev {
     left: 10px;
   }
 
-  .slideshow button2.next {
+  .slideshow button.next {
     right: 10px;
   }
 
@@ -453,7 +453,7 @@ button:hover:after {
   }
 
   .titulo{
-    font-size: 15px;
+    font-size: 17px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
     margin-left: 15px;
@@ -473,6 +473,7 @@ button:hover:after {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 13px;
     margin-left: 5px;
+    margin-top: 9px;
   }
 
   .texto3{
@@ -502,9 +503,43 @@ button:hover:after {
 
   .contorno2{
     position: absolute;
-    height: 35vh;
+    height: 38vh;
     width: 20vw;
     box-shadow: 0 0 10px rgb(0, 196, 121);
     margin: 20vh 0 0 72vw;
     border-radius: 15px;
 }
+
+.texto4{
+    color: red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+  .reserva {
+    position: relative;
+    width: 7vw;
+    height: 4vh;
+    margin-top: 1vh;
+    margin-left: 17vh;
+    margin-bottom: 0;
+    background-image: linear-gradient(rgb(22, 141, 107), rgb(22, 141, 107));
+    border: none;
+    border-radius: 15px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #D9E8D8;
+    padding: 1px 2px;
+  }
+  .reserva:hover{
+    background-color: #D9E8D8;
+    box-shadow: 0 0 10px white;
+    transition: .3s linear;
+    
+  } 
