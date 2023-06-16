@@ -424,7 +424,7 @@ button:hover:after {
     transform: translateX(-300%);
   }
 
-  .slideshow button {
+  .slideshow button2 {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -437,11 +437,11 @@ button:hover:after {
     font-size: 24px;
   }
 
-  .slideshow button.prev {
+  .slideshow button2.prev {
     left: 10px;
   }
 
-  .slideshow button.next {
+  .slideshow button2.next {
     right: 10px;
   }
 
@@ -544,3 +544,5 @@ button:hover:after {
     transition: .3s linear;
     
   } 
+
+   
