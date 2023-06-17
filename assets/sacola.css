@@ -430,7 +430,7 @@ label {
 }
 
 .contorno{
-    border: solid 2px rgba(91, 202, 171, 0.829);
+    border: solid 2px #5bcaabd3;
     border-radius: 10px;
     margin: 20px;
 }
@@ -528,4 +528,9 @@ label {
 
   .label{
     color: rgb(233, 231, 231);
+  }
+
+  .texto2{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
