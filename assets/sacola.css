@@ -425,7 +425,7 @@ label {
 .titulo2{
     font-size: 25px;
     margin-top: 5vh;
-    margin-left: 3vw;
+    margin-left: 2vw;
     color: rgb(233, 231, 231);
 }
 
@@ -532,9 +532,39 @@ label {
 
   .texto2{
     font-size: 18px;
-    font-family: Lato;
+    /* font-family: Lato; */
+    color:rgb(233, 231, 231);
+    margin: 0 0 0 1vw;
   }
 
   .imagem{
+    /* position: absolute; */
+    height: 30vh;
+    width: 30vw;
+    align-items: center;
+    /* border: 4px solid rgb(22, 141, 107); */
     border-radius: 5px;
+    overflow: hidden;
+  }
+  .imagem   img{
+    /* position: relative; */
+    /* filter: drop-shadow(0 0 10px green); */
+    height: 30vh;
+    /* margin: -2vh 0 0 0vw; */
+    /* border-radius: 10px; */
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  .imagem:hover img{
+    transform: scale(2);
+    z-index: 1;
+  }
+
+  .imagenzinha{
+    border: solid 3px white;
+    height: 30vh;
+    width: 30vw;
+    border-radius: 10px;
+    margin: 4px;
+    margin-top: 5vh;
   }
