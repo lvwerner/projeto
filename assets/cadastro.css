@@ -251,17 +251,7 @@ input[type="submit"]:active
     align-items: center;
     
 } */
-.rodape{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 30px;
-    background-color: rgba(22, 141, 107, 0.63);
-    color: white;
-    text-align: right;
-    /* padding: 15px; */
-}
+
 
 .mainmenubtn {
     /* background-color: rgba(22, 141, 107, 0.63);  */
@@ -489,3 +479,4 @@ button:hover:after {
     background-color: #0d1117;
 }
 
+ 

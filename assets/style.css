@@ -51,7 +51,7 @@ body{
     grid-template-columns: repeat(2, 130px);
     grid-gap: 0px;
     /* margin-top: 25px;  */
-    color: white;
+    /* color: white; */
     text-decoration-color: black;
 }
 .botao2 > a{
@@ -67,7 +67,7 @@ body{
     font-size: 15px;
     margin: 25px 10px 10px;
     /* padding: 10px; */
-    background-color: white;
+    /* background-color: white; */
     cursor: pointer; 
 }
      
@@ -163,13 +163,16 @@ body{
 }
 .btn {
     width: 10vw;
-    height: 2em;
+    height: 2vh;
     margin: 0.5em;
     top: 2vh;
+    text-align: center;
+    padding-top: 1vh;
+    padding-bottom: 2vh;
     /* padding-left: 2vw; */
     left: 10vw;
     background: transparent;
-    color: white;
+    /* color: white; */
     border: 2px solid red; 
     border-radius: 15px;
     text-decoration: none;
@@ -180,7 +183,16 @@ body{
     z-index: 1;
     overflow: hidden;
     }
-
+    .btn:hover a{
+        color: white;
+        transition: all 0.3s;
+    }
+.btn:hover{
+    background-color: red;
+    color: white;
+    /* box-shadow: 0 0 10px white; */
+    transition: all 0.3s;
+}
 button:hover {
     color: black;
 }
