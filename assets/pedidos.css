@@ -92,19 +92,21 @@ body{
     border: none;
     font-size: 30px;
     cursor: pointer;
-    padding:20px;
+    padding: 20px;
     margin-top:2px;
     margin-right: 30px;
-    /* width: 50px; */
+    /* width: 30px; */
     overflow: hidden;
 }
+
 .mainmenubtn:hover {
     left: 100px;
 }
+
 .dropdown {
     position: relative;
     display: inline-block;
-    width: 150px;
+    width: 100px;
     height: 100px;
     align-items: right;
 }

@@ -127,10 +127,9 @@ body{
 .dropdown {
     position: relative;
     display: inline-block;
-    width: 150px;
-    height: 100px;
+    width: 140px;
+    height: 80px;
     align-items: right;
-    
     /* left: 12px; */
 }
 .dropdown-child {
@@ -230,7 +229,7 @@ button:hover:after {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 30px;
+    height: 20px;
     background-color: rgba(91, 202, 171, 0.829);
     color: white;
     text-align: right;
@@ -256,7 +255,7 @@ button:hover:after {
     height: 60vh;
     background-color: #0d1117;
     margin: auto;
-    margin-top: 10vh;
+    margin-top: 2vh;
     margin-left: 30vw;
     text-align: center;
     /* display: flex;    */
@@ -268,23 +267,23 @@ button:hover:after {
 }
 
 .produto{
-    height: 77vh;
-    width: 68vw;
+    height: 75vh;
+    width: 65vw;
     border: 1.5px solid white;
     position: absolute;
-    margin: 2vh 0 0 5vw;
+    margin: 2vh 0 0 4vw;
     border-radius: 15px;
-    box-shadow: 0 0 10px rgb(0, 196, 121);
+    box-shadow: 0 0 7px rgb(0, 196, 121);
     display: grid;
     grid-template-columns: repeat(2, 45vw);
     grid-template-rows: repeat(2, 38vh);
 }
 
 .contorno{
-    height: 32vh;
+    height: 33vh;
     width: 24vw;
-    box-shadow: 0 0 10px rgb(0, 196, 121);
-    margin: 2vh 0 0 -4vw;
+    box-shadow: 0 0 7px rgb(0, 196, 121);
+    margin: 2vh 0 0 -6vw;
     border-radius: 15px;
 }
 
@@ -297,7 +296,7 @@ button:hover:after {
     position: absolute;
     margin: 25vh 0 0 10vw;
     border-radius: 15px;
-    box-shadow: 0 0 10px rgb(0, 196, 121);
+    box-shadow: 0 0 7px rgb(0, 196, 121);
     display: flex;
 }
 .slideshow {
@@ -416,10 +415,10 @@ button:hover:after {
 
   .contorno2{
     position: absolute;
-    height: 38vh;
-    width: 20vw;
-    box-shadow: 0 0 10px rgb(0, 196, 121);
-    margin: 20vh 0 0 72vw;
+    height: 39vh;
+    width: 18vw;
+    box-shadow: 0 0 7px rgb(0, 196, 121);
+    margin: 17vh 0 0 67vw;
     border-radius: 15px;
 }
 
