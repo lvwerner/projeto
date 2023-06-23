@@ -73,6 +73,7 @@ body{
 .logo > img{
     left: 10px;
     filter: drop-shadow(0 0 3px green);
+    margin-top: 1vh;
 }
 
 .rodape{
