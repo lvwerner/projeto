@@ -81,6 +81,7 @@ body{
     display: block;
     block-size: 100px;
     margin-left: 22px;
+    margin-top: 1vh;
 }
 .logo > img{
     left: 10px;
