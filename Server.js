@@ -33,7 +33,7 @@ app.post('/login', (req, res) => {
   let username = req.body.username;
   let password = req.body.password;
   
-  connection.query("SELECT * FROM usuario where email = '" + username + "'" , function (err, rows, fields) {
+  connection.query("SELECT * FROM cliente where email = '" + username + "'" , function (err, rows, fields) {
     console.log("Results:", rows);
     if (!err) {
       if (rows.length > 0) {
