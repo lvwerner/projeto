@@ -270,7 +270,7 @@ label {
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    margin-top: 7vw;
+    /* margin-top: 1vw; */
     margin-left: 19vh ;
     border-radius: 10px;
     border: 1px solid rgb(182, 182, 182);
