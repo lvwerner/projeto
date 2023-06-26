@@ -1,6 +1,8 @@
 body{
     margin: 0;
 }
+
+/* Estilização do cabeçalho */
 .cabecalho{
     width: 100%;
     height: 100px;
@@ -14,12 +16,15 @@ body{
     background-color: transparent;
     color: black;
 }
+
+/* Estilização dos botões */
 .botao {
     height: 50%;
     display: inline-grid;
     grid-template-columns: repeat(4, 80px);
     grid-gap: 20px;    
 }
+
 .botao > a{
     color: white;
     font-family: sans-serif;
@@ -32,9 +37,11 @@ body{
     text-align: center;
     text-decoration: none;
 }
+
 .botao:hover >a{
     background-color: rgb(26, 121, 94);
 }
+
 .botao2{
     height: 50%;
     display: inline-grid;
@@ -43,24 +50,14 @@ body{
     color: white;
     text-decoration-color: black;
 }
+
 .botao2 > a{
     text-decoration: none;
     background-color: white;
     cursor: pointer; 
 }
      
-
-
-.pesquisa > input{
-    border-radius: 20px;
-    margin: 30px 0px 0px;
-    color: black;
-    font-size: 10px;
-    width: 200px;
-    height: 20%;
-    border: solid 1px black;
-    
-}
+/* Estilização da logo */
 .log1{
     width: 100px;
     text-align: center;
@@ -72,10 +69,13 @@ body{
     block-size: 100px;
     margin-left: 22px;
 }
+
 .logo > img{
     left: 10px;
     filter: drop-shadow(0 0 2px green);
 }
+
+/* Div principal */
 .principal {
     width: 100%;
     height: 100vh;
@@ -85,10 +85,13 @@ body{
     background-repeat: no-repeat;
     font-family:sans-serif;
 }
+
 .principal >img{
     width: 1;
     height: 50%;
 }
+
+/* Textos */
 .titulo{
     font-size: 120px;
     font-family: 'Alfa Slab One', coursive;
@@ -98,17 +101,7 @@ body{
     -webkit-text-fill-color: transparent;
     position: absolute;
 }
-.rodape{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 30px;
-    background-color: rgba(91, 202, 171, 0.829);
-    color: white;
-    text-align: right;
-    /* padding: 15px; */
-}
+
 .subtitulo{
     font-size: 20px;
     font-style: oblique;
@@ -120,6 +113,21 @@ body{
     font-family: 'Abril Fatface', coursive;
     color: rgb(255, 255, 255);
 }
+
+/* Estilização do rodape */
+.rodape{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: rgba(91, 202, 171, 0.829);
+    color: white;
+    text-align: right;
+    /* padding: 15px; */
+}
+
+/* Estilização menu suspenso  */
 .mainmenubtn {
     background-color: transparent;
     color: white;
@@ -129,43 +137,45 @@ body{
     padding:20px;
     margin-top:2px;
     margin-right: 30px;
-    /* width: 50px; */
     overflow: hidden;
 }
+
 .mainmenubtn:hover {
     background-color: transparent;
     left: 100px;
 }
+
 .dropdown {
     position: relative;
     display: inline-block;
     width: 150px;
     height: 100px;
     align-items: right;
-    
-    /* left: 12px; */
 }
+
 .dropdown-child {
     display: none;
     background-color: white;
-    min-width: 20px;
-    
+    min-width: 20px;   
 }
+
 .dropdown-child a {
     color:black;
     padding: 20px;
     text-decoration: none;
-    display: block;
-    
+    display: block;  
 }
+
 .dropdown:hover .dropdown-child {
-    display: block;
-    
+    display: block;  
 }
+
 .menu{
     width: 0px;
     text-align: right;
 }
+
+/* Estilização dos botões */
 .btn {
     width: 5.5em;
     height: 2em;
@@ -183,7 +193,7 @@ body{
     position: relative;
     z-index: 1;
     overflow: hidden;
-    }
+}
 
 button:hover {
     color: black;
@@ -191,7 +201,6 @@ button:hover {
 
 button:after {
     content: "";
-    /* background: rgba(0, 250, 121, 0.534); */
     position: absolute;
     z-index: -1;
     left: -20%;
@@ -207,33 +216,38 @@ button:hover:after {
     background: rgba(22, 141, 58, 0.63);
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
-    }
-    .btn2 {
-        width: 5.5em;
-        height: 2em;
-        margin: 0.5em;
-        left: 5vw;
-        top: 2.5vh;
-        background: transparent;
-        color: rgb(0, 0, 0);
-        border: 2px solid rgb(233, 231, 231);;
-        border-radius: 20px;
-        text-decoration: none;
-        font-size: 15px;
-        font-family: 'Bebas Neue', ;
-        cursor: pointer;
-        position: relative;
-        z-index: 1;
-        overflow: hidden;
-        }
+}
+
+.btn2 {
+    width: 5.5em;
+    height: 2em;
+    margin: 0.5em;
+    left: 5vw;
+    top: 2.5vh;
+    background: transparent;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(233, 231, 231);;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Bebas Neue', ;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
 .anone{
     text-decoration: none;
     color: rgb(233, 231, 231);
 }
+
 .anone2{
     text-decoration: none;
     color: rgb(233, 231, 231);
 }
+
+/* Quadrado branco */
 .card {
     margin-left: 40px;
     width: 680px;
@@ -241,7 +255,7 @@ button:hover:after {
     transition: all 0.2s;
     position: relative;
     margin-left: 25vw;
-    }
+}
 
 .card-inner {
     width: inherit;
@@ -251,37 +265,5 @@ button:hover:after {
     backdrop-filter: blur(10px);
     border-radius: 8px;
     text-align: center;
-    }
-
-.circle {
-    width: 120px;
-    height: 120px;
-    background: radial-gradient(#00fff7, #03bf8d);
-    border-radius: 50%;
-    position: absolute;
-    animation: move-up6 2s ease-in infinite alternate-reverse;
-}
-
-.circle:nth-child(1) {
-    top: -25px;
-    left: -25px;
-}
-
-.circle:nth-child(2) {
-    bottom: -25px;
-    right: -25px;
-    animation-name: move-down1;
-}
-
-@keyframes move-up6 {
-to {
-transform: translateY(-20px);
-}
-}
-
-@keyframes move-down1 {
-to {
-transform: translateY(20px);
-}
 }
 
