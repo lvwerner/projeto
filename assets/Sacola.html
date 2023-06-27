@@ -83,10 +83,21 @@
                         </label>
                     </form>
                 </div>
-               <button class="reserva" href="acompanhe pedido"> <a href="#"> Finalizar Reserva</a>
-                   </button>
+                <button onclick="showPopup()" class="reserva">Fazer Reserva</button>
+                <div id="popup" class="popup">
+                    <p class="res">Reserva realizada com Sucesso</p>
+
+                <img class="checkmark" src="https://i.pinimg.com/originals/70/a5/52/70a552e8e955049c8587b2d7606cd6a6.gif" >
+                <p class="res">Nos vemos em breve...</p>
+                </div>
     </div>
     <div class="rodape">  
     </div>
+    <script>
+        function showPopup() {
+          var popup = document.getElementById("popup");
+          popup.style.display = "block";
+        }
+      </script>
     </body>
     </html>

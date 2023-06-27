@@ -411,3 +411,30 @@ label {
     margin: 4px;
     margin-top: 5vh;
   }
+   /* Estilos para o pop-up */
+   .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    background-color: black;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .checkmark {
+/* position: relative; */
+height: 100%;
+width: 100%;  }
+
+.res{
+    font-family: 'Abril Fatface', coursive;
+    margin: 0 0 0 3vw;
+    color: #ccc;
+    position: absolute;
+}
+ 
