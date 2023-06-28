@@ -76,85 +76,23 @@
                         <br>
                         <label>
                             <input type="radio" name="radio">
-                            <span>Cartão de crédito</span>
-                            <p class="label"> Até 10x sem juros</p>
-                        </label>
-                        <button class="question-mark-button" onclick="showPopup()">?</button>
-
-                        <div id="popup" class="popup">
-                            <span class="close-icon" onclick="hidePopup()">&#10006;</span>
-                            <div class="modal">
-                                <form class="form">
-                                    <div class="credit-card-info--form">
-                                        <div class="input_container">
-                                            <label for="password_field" class="input_label">Nome no cartão</label>
-                                            <input id="password_field" class="input_field" type="text" name="input-name"
-                                                title="Inpit title" placeholder="Enter your full name">
-                                        </div>
-                                        <div class="input_container">
-                                            <label for="password_field" class="input_label">Número do cartão</label>
-                                            <input id="password_field" class="input_field" type="number"
-                                                name="input-name" title="Inpit title" placeholder="0000 0000 0000 0000">
-                                        </div>
-                                        <div class="input_container">
-                                            <label for="password_field" class="input_label">Data de / CVV</label>
-                                            <div class="split">
-                                                <input id="password_field" class="input_field" type="text"
-                                                    name="input-name" title="Expiry Date" placeholder="01/23">
-                                                <input id="password_field" class="input_field" type="number" name="cvv"
-                                                    title="CVV" placeholder="CVV">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <button2 class="purchase--btn">Checkout</button2>
-                                </form>
-                            </div>
-                        </div>
-
-                        <br>
-                        <br>
-                        <label>
-                            <input type="radio" name="radio">
                             <span>Boleto bancário</span>
                             <p class="label"> Á vista</p>
                         </label>
-                    </form>
+                        <br>
+                        <label>
+                            <input type="radio" name="radio">
+                            <span>Cartão de crédito</span>
+                            <p class="label"> Até 10x sem juros</p>
+                        </label>
+
                 </div>
                 <br>
-                <button class="reserva" href="#"> <a href="#"> Finalizar Reserva</a>
-                </button>
+                <button2 class="reserva" href="#"> <a href="#"> Finalizar Reserva</a>
+                </button2>
+
             </div>
             <div class="rodape">
             </div>
-            <script>
-                // Função para exibir o pop-up
-                function showPopup() {
-                    var popup = document.createElement('div');
-                    popup.setAttribute('id', 'popup');
-                    popup.setAttribute('class', 'popup');
-
-                    var closeIcon = document.createElement('span');
-                    closeIcon.setAttribute('class', 'close-icon');
-                    closeIcon.innerHTML = '&#10006;';
-                    closeIcon.addEventListener('click', hidePopup);
-
-                    var popupContent = document.createElement('p');
-                    popupContent.innerText = 'Este é um pop-up de exemplo.';
-
-                    popup.appendChild(closeIcon);
-                    popup.appendChild(popupContent);
-
-                    document.body.appendChild(popup);
-                }
-
-                // Função para ocultar o pop-up
-                function hidePopup() {
-                    var popup = document.getElementById('popup');
-                    if (popup) {
-                        popup.parentNode.removeChild(popup);
-                    }
-                }
-            </script>
 </body>
-
 </html>
