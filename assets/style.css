@@ -297,7 +297,8 @@ button:hover:after {
 .forgot a:hover, .signup a:hover {
     text-decoration: underline rgba(167, 139, 250, 1);
 }
-  
+
+/* Botão entrar */
 .sign {
     display: block;
     width: 100%;
@@ -310,7 +311,8 @@ button:hover:after {
     font-weight: 600;
     cursor: pointer;
 }
-  
+
+/* Google */
 .social-message {
     display: flex;
     align-items: center;

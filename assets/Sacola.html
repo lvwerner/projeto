@@ -1,62 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sacola.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
     <title>Minha sacola</title>
-    <link rel="shortcut icon"
-    href="https://i.pinimg.com/originals/bf/96/ca/bf96ca5e805812a91b3eaf41d4901a16.png"
-    type="image/x-icon">
+    <link rel="shortcut icon" href="https://i.pinimg.com/originals/bf/96/ca/bf96ca5e805812a91b3eaf41d4901a16.png"
+        type="image/x-icon">
 </head>
+
 <body>
     <div class="principal">
-    <div class="cabecalho">
-        <div class="log1">
-        <div class="logo">
-            <img class="logo_site" src="https://i.pinimg.com/originals/bf/96/ca/bf96ca5e805812a91b3eaf41d4901a16.png" height="90" width="90">
-        </div> 
-    </div> 
-        <div class="botao">
-            <button class="btn2"><a class="anone2" href="mhotelcar.html">Início</a></button>
-            <button class="btn2"><a class="anone2" href="Produto.html">Produtos</a></button>
-            <button class="btn2"><a class="anone2" href="sobre nós.html">Sobre</a></button>
-            <button class="btn2"><a class="anone2" href="contatinho.html">Contato</a></button>
-        </div>
-        <div class="menu">
-        <div class="dropdown">
-            <div class="mainmenubtn"> ☰ </div>
-            <div class="dropdown-child">
-                <a href="Minha conta.html">Minha Conta</a>
-                <a href="pedidos.html">Meus Pedidos</a>
-                <a href="avaliacao.html">Avalie-nos</a>
+        <div class="cabecalho">
+            <div class="log1">
+                <div class="logo">
+                    <img class="logo_site"
+                        src="https://i.pinimg.com/originals/bf/96/ca/bf96ca5e805812a91b3eaf41d4901a16.png" height="90"
+                        width="90">
+                </div>
             </div>
-            </div> 
-        </div>
-    </div>
-    <div class="sobrepor">
-        <div class="contorno">
-        <div class="titulo2"><b>Resumo do pedido</b> <br> <br>
-            <div class="imagenzinha">
-            <div class="imagem">
-   
-                <div class="texto2">  <br>
-                    <b>OFERTA ECONÔMICA </b><br> <br>
-
-                    • Paradas em restaurantes selecionados na hora da retirada. <br>
-                    • Parada na praia dos Aventureiros. <br>
-                    • Passeio pelo centro histórico de Angra. <br> <br>
-                    <div class="texto2">  R$2.964,00 </b> </div>
+            <div class="botao">
+                <button class="btn2"><a class="anone2" href="mhotelcar.html">Início</a></button>
+                <button class="btn2"><a class="anone2" href="Produto.html">Produtos</a></button>
+                <button class="btn2"><a class="anone2" href="sobre nós.html">Sobre</a></button>
+                <button class="btn2"><a class="anone2" href="contatinho.html">Contato</a></button>
+            </div>
+            <div class="menu">
+                <div class="dropdown">
+                    <div class="mainmenubtn"> ☰ </div>
+                    <div class="dropdown-child">
+                        <a href="Minha conta.html">Minha Conta</a>
+                        <a href="pedidos.html">Meus Pedidos</a>
+                        <a href="avaliacao.html">Avalie-nos</a>
                     </div>
+                </div>
             </div>
         </div>
+        <div class="sobrepor">
+            <div class="contorno">
+                <div class="titulo2"><b>Resumo do pedido</b> <br> <br>
+                    <div class="imagenzinha">
+                        <div class="imagem">
 
-        </div>
-        <div1 ></div>
+                            <div class="texto2"> <br>
+                                <b>OFERTA ECONÔMICA </b><br> <br>
+
+                                • Paradas em restaurantes selecionados na hora da retirada. <br>
+                                • Parada na praia dos Aventureiros. <br>
+                                • Passeio pelo centro histórico de Angra. <br> <br>
+                                <div class="texto2"> R$2.964,00 </b> </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div1>
+            </div>
             <div class="contorno2">
                 <div class="titulo2"><b>Formas de pagamento</b></div>
                 <br>
@@ -66,27 +70,91 @@
                     <form>
                         <label>
                             <input type="radio" name="radio" checked="">
-                            <span>PIX</span> 
-                            <p class="label">     10% de desconto</p>
+                            <span>PIX</span>
+                            <p class="label"> 10% de desconto</p>
                         </label>
                         <br>
                         <label>
                             <input type="radio" name="radio">
                             <span>Cartão de crédito</span>
-                            <p class="label">     Até 10x sem juros</p>
+                            <p class="label"> Até 10x sem juros</p>
                         </label>
+                        <button class="question-mark-button" onclick="showPopup()">?</button>
+
+                        <div id="popup" class="popup">
+                            <span class="close-icon" onclick="hidePopup()">&#10006;</span>
+                            <div class="modal">
+                                <form class="form">
+                                    <div class="credit-card-info--form">
+                                        <div class="input_container">
+                                            <label for="password_field" class="input_label">Nome no cartão</label>
+                                            <input id="password_field" class="input_field" type="text" name="input-name"
+                                                title="Inpit title" placeholder="Enter your full name">
+                                        </div>
+                                        <div class="input_container">
+                                            <label for="password_field" class="input_label">Número do cartão</label>
+                                            <input id="password_field" class="input_field" type="number"
+                                                name="input-name" title="Inpit title" placeholder="0000 0000 0000 0000">
+                                        </div>
+                                        <div class="input_container">
+                                            <label for="password_field" class="input_label">Data de / CVV</label>
+                                            <div class="split">
+                                                <input id="password_field" class="input_field" type="text"
+                                                    name="input-name" title="Expiry Date" placeholder="01/23">
+                                                <input id="password_field" class="input_field" type="number" name="cvv"
+                                                    title="CVV" placeholder="CVV">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button2 class="purchase--btn">Checkout</button2>
+                                </form>
+                            </div>
+                        </div>
+
+                        <br>
                         <br>
                         <label>
                             <input type="radio" name="radio">
                             <span>Boleto bancário</span>
-                            <p class="label">     Á vista</p>
+                            <p class="label"> Á vista</p>
                         </label>
                     </form>
                 </div>
-               <button class="reserva" href="acompanhe pedido"> <a href="#"> Finalizar Reserva</a>
-                   </button>
-    </div>
-    <div class="rodape">  
-    </div>
-    </body>
-    </html>
+                <br>
+                <button class="reserva" href="#"> <a href="#"> Finalizar Reserva</a>
+                </button>
+            </div>
+            <div class="rodape">
+            </div>
+            <script>
+                // Função para exibir o pop-up
+                function showPopup() {
+                    var popup = document.createElement('div');
+                    popup.setAttribute('id', 'popup');
+                    popup.setAttribute('class', 'popup');
+
+                    var closeIcon = document.createElement('span');
+                    closeIcon.setAttribute('class', 'close-icon');
+                    closeIcon.innerHTML = '&#10006;';
+                    closeIcon.addEventListener('click', hidePopup);
+
+                    var popupContent = document.createElement('p');
+                    popupContent.innerText = 'Este é um pop-up de exemplo.';
+
+                    popup.appendChild(closeIcon);
+                    popup.appendChild(popupContent);
+
+                    document.body.appendChild(popup);
+                }
+
+                // Função para ocultar o pop-up
+                function hidePopup() {
+                    var popup = document.getElementById('popup');
+                    if (popup) {
+                        popup.parentNode.removeChild(popup);
+                    }
+                }
+            </script>
+</body>
+
+</html>
