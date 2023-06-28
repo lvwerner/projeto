@@ -247,9 +247,10 @@ button:hover:after {
     position: relative;
     margin-left: 50wh ;
     border-radius: 10px;
-    border: 1px solid rgb(182, 182, 182);
+    border: 2px solid rgb(182, 182, 182);
     display: grid;
     grid-template-rows: repeat(2, 50%);
+    grid-template-columns: repeat(2, 50%);
 }
 
 .imagem{
@@ -272,8 +273,17 @@ button:hover:after {
     border-radius: 10px; 
 }
 
-.text{
-    font-size: 14px;
+.texto{
+    font-size: 20px;
     color: white;
     position:absolute;
+    margin-left: 25vw;
+    margin-top: -25vh;
+}
+
+.texto2{
+    font-size: 17px;
+    color: white;
+    position:absolute;
+    width: 25vw ;
 }
