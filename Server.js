@@ -29,10 +29,10 @@ connection.connect(function (err) {
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/public/mhotelcar.html')
 })
-
-
  
-app.post('/', (req, res) => {
+// aaaaaaa
+ 
+app.post('/login', (req, res) => {
   let username = req.body.username;
   let password = req.body.password;
   
@@ -42,7 +42,8 @@ app.post('/', (req, res) => {
       if (rows.length > 0) {
         
         if ( rows[0].senha === password) {
-            res.send('Login com Sucesso!!!');
+            console.log('Login com Sucesso!!!');
+            res.sendFile(__dirname + '/public/mhotelcar.html')
             } else {
              res.send('Senha incorreta');
             }
@@ -62,9 +63,12 @@ app.post('/cadastro', (req, res) => {
   let sobrenome =req.body.sobrenome;
   let cpf =req.body.cpf;
   let email = req.body.email;
-  let password = req.body.password;
+  let senha = req.body.senha;
   
-  connection.query( "INSERT INTO `cliente`( `nome`, `sobrenome`, `CPF`,  `email`, `senha`, ) VALUES  ('" + nome + "','" + sobrenome + "','" + cpf + "','" + email + "','" + password + "')", function (err, rows, fields) {
+  connection.query( "INSERT INTO cliente( `nome`, `sobrenome`, `cpf`,  `email`, `senha` ) VALUES  ('" + nome + "','" + sobrenome + "','" + cpf + "','" + email + "','" + senha + "')", function (err, rows, fields) {
+
+
+    
     console.log("Results:", rows);
     if (!err) {
       console.log("Cadastro feito com sucesso!!");
