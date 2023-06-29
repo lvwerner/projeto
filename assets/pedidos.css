@@ -241,21 +241,20 @@ button:hover:after {
     width: 50vw;
     height: 65vh;
     background-color: #0d1117;
-    margin: auto;
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    margin-left: 50wh ;
+    margin-left: 24vw;
+    margin-top: -3vh;
     border-radius: 10px;
     border: 2px solid rgb(182, 182, 182);
     display: grid;
     grid-template-rows: repeat(2, 50%);
     grid-template-columns: repeat(2, 50%);
 }
-
-.imagem{
-    border-bottom: 1px solid white;
-}
+/* .imagem{
+    border: 1px solid white;
+} */
 
 .imagem img{
     height: 30vh;
@@ -277,13 +276,15 @@ button:hover:after {
     font-size: 20px;
     color: white;
     position:absolute;
-    margin-left: 25vw;
+    margin-left: 27vw;
     margin-top: -25vh;
+    font-family: 'Old Standard TT', coursive;
 }
 
 .texto2{
-    font-size: 17px;
+    font-size: 16px;
     color: white;
     position:absolute;
     width: 25vw ;
+    font-family: 'Old Standard TT', coursive;
 }
