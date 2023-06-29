@@ -316,7 +316,7 @@ button:hover:after {
 .sign {
   display: block;
   width: 100%;
-  background-color: rgba(91, 202, 171, 0.829);
+  background-color: rgb(22, 141, 107);
   padding: 0.75rem;
   text-align: center;
   color: rgba(17, 24, 39, 1);
