@@ -414,6 +414,35 @@ label {
     margin: 4px;
     margin-top: 5vh;
   }
+<<<<<<< HEAD:public/sacola.css
+   /* Estilos para o pop-up */
+   .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    background-color: black;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .checkmark {
+/* position: relative; */
+height: 100%;
+width: 100%;  }
+
+.res{
+    font-family: 'Abril Fatface', coursive;
+    margin: 0 0 0 3vw;
+    color: #ccc;
+    position: absolute;
+}
+ 
+=======
 
   .card,
   .card__chip {
@@ -683,3 +712,4 @@ label {
         cursor: pointer;
         margin-top: 10px;
       }
+>>>>>>> 4ad4619417308da1b991e22ac375f5aec366e5e5:assets/sacola.css
