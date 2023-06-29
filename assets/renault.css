@@ -375,6 +375,13 @@ button:hover:after {
   margin-top: 15px;
 }
 
+.texto5{
+  color: white;
+  font-family: 'Old Standard TT', coursive;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
 
 /* Botão de reserva */
 .reserva {
