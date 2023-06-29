@@ -6,15 +6,16 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
 const path = require('path')
-//app.use('/assets', express.static('assets'))
-//app.use('/images', express.static('images'))
-app.use('/assets', express.static('assets'))
+
+app.use(express.static('public'));
+app.use('/public/', express.static('public')) /* parte do tiago */
+app.use('/assets/', express.static('assets')) /* parte do tiago */
 
 const connection = mysql.createConnection({
   host: '127.0.0.1',
   user: 'root',
   password: 'root',
-  database: 'mhcar',
+  database: 'mhome',
 });
 
 connection.connect(function (err) {
@@ -26,20 +27,23 @@ connection.connect(function (err) {
 });
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/mhotelcar.html')
+  res.sendFile(__dirname + '/public/mhotelcar.html')
 })
+ 
+// aaaaaaa
  
 app.post('/login', (req, res) => {
   let username = req.body.username;
   let password = req.body.password;
   
-  connection.query("SELECT * FROM cliente where email = '" + username + "'" , function (err, rows, fields) {
+  connection.query("SELECT * FROM user where email = '" + username + "'" , function (err, rows, fields) {
     console.log("Results:", rows);
     if (!err) {
       if (rows.length > 0) {
         
         if ( rows[0].senha === password) {
-            res.send('Login com Sucesso!!!');
+            console.log('Login com Sucesso!!!');
+            res.sendFile(__dirname + '/public/mhotelcar.html')
             } else {
              res.send('Senha incorreta');
             }
@@ -53,6 +57,30 @@ app.post('/login', (req, res) => {
     }
   });
 });
-app.listen(3000, () => {
-  console.log('Servidor rodando na porta 3000!')
+
+app.post('/cadastro', (req, res) => {
+  let nome = req.body.nome;
+  let sobrenome =req.body.sobrenome;
+  let cpf =req.body.cpf;
+  let email = req.body.email;
+  let password = req.body.password;
+
+  
+  connection.query( "INSERT INTO `user`(`nome`, `sobrenome`, `cpf`, `email`,`senha`) VALUES  ('" + nome + "','" + sobrenome + "','" + cpf + "','" + email + "','" + password + "')", function (err, rows, fields) {
+
+
+    
+    console.log("Results:", rows);
+    if (!err) {
+      console.log("Cadastro feito com sucesso!!");
+      res.sendFile(__dirname + '/public/tela de login.html')
+    } else {
+      console.log("Erro: Consulta não realizada", err);
+      res.send('Login failed');
+    }
+  });
+});
+
+app.listen(3001, () => {
+  console.log('Servidor rodando na porta 3001!')
 })
