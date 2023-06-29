@@ -43,42 +43,39 @@
                 </div> 
             </div>
         </div>
-	<div class="box">
-		 <form autocomplete="off">
-			<div class="inputBox">
-
-			<h2>Nome</h2>
-			<i></i>
-            <input class="nome" id="cadastrousuario" type="text" aria-label="Digite seu nome" placeholder="Digite seu nome"  required>
-<br>
-            <h2>Sobrenome</h2>
-			<i></i>
-            <input class="nome"id="cadastrousuario" type="text" aria-label="Digite seu nome" placeholder="Digite seu sobrenome"  required>
-<br>
-            <h2>CPF</h2>
-			<i></i>
-            <input class="nome" id="cadastrousuario" min="11" max="11" type="text" aria-label="Digite seu CPF" placeholder="xxx.xxx.xxx-xx" pattern="\d{3}.\d{3}.\d{3}-\d{2}" required >
-<br>
-            <h2>Email</h2>
-			<i></i>
-			<input class="nome" id="cadastrousuario" type="email" aria-label="Digite seu email" placeholder="Digite seu email" pattern="email" required>
-<br>		
-			<h2>Data de Nascimento</h2>
-			<i></i>
-            <input class="nome" id="cadastrousuario" type="date" aria-label="Digite sua data de Nascimento" required>
-<br>
-			<h2>Senha</h2>
-			<i></i>
-			<input class="nome" id="nome" type="password" aria-label="senha" placeholder="Insira sua senha" required>
-<br>
-			<h2>Confirme sua senha</h2>
-			<i></i>
-			<input class="nome" id="cadastrousuario" type="password" aria-label="senha" placeholder="Confirme sua senha" requird>
-<br>
-<br>
-			<input type="submit" value="Cadastro">
-		</form>
-	</div> 
+        <div class="wrapper">
+            <h2>Cadastro</h2>
+            <form action="/cadastro" method="post">
+              <div class="input-box">
+                <input type="text" name="nome" placeholder="Digite seu nome" required>
+              </div>
+              <div class="input-box">
+                <input type="text" name="sobrenome" placeholder="Digite seu sobrenome" required>
+              </div>
+              <div class="input-box">
+                <input type="text" name="email" placeholder="Digite seu e-mail" required>
+              </div>
+              <div class="input-box">
+                <input type="text" name="cpf" placeholder="Digite seu CPF" required>
+              </div>
+              <div class="input-box">
+                <input type="password" name="password" placeholder="Digite sua senha" required>
+              </div>
+              <div class="input-box">
+                <input type="password" name="password" placeholder="Confirme sua senha" required>
+              </div>
+              <div class="policy">
+                <input type="checkbox">
+                <h3>Eu aceito todos os termos & condições</h3>
+              </div>
+              <div class="input-box button">
+                <input type="submit" value="Registre-se agora">
+              </div>
+              <div class="text">
+                <h3>Já tem uma conta? <a href="login.html">Faça Login</a></h3>
+              </div>
+            </form>
+          </div>
 
 	
 	<div class="rodape"> </div>

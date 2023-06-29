@@ -222,8 +222,8 @@ button:hover:after {
     height: 60vh;
     background-color: #0d1117;
     margin: auto;
-    margin-top: 10vh;
-    margin-left: 30vw;
+    margin-top: 8vh;
+    margin-left: 33vw;
     text-align: center;
     font-size: 13px;
     position: fixed;
@@ -247,7 +247,7 @@ button:hover:after {
     margin: 0 0 0 -4.5vw;
     background-color: white (128, 128, 128, 0.493);
     width: 42.5vw;
-    height: 8vh;
+    height: 6.5vh;
     border-radius: 10px;
     color: rgb(233, 231, 231);
 }
@@ -264,14 +264,14 @@ label {
   }
   
   .quadrado {
-    width: 320px;
-    height: 15px;
-    background: rgb(91, 161, 142);
+    width: 23vw;
+    height: 3vh;
+    background: rgba(91, 202, 171, 0.829);
     color:black;
     padding: 10px;
     border: none;
     outline: none;
     border-radius: 4px;
-    font-size: 15px;
-    font-family: 'Old Standard TT', coursive;
+    font-size: 15px; 
+    margin-left: 5vw;
 }
