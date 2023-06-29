@@ -19,15 +19,15 @@ body{
 
 /* Estilização dos botões */
 .botao {
-    height: 50%;
+    height: 80%;
     display: inline-grid;
-    grid-template-columns: repeat(4, 80px);
-    grid-gap: 20px;   
+    grid-template-columns: repeat(4, 70px);
+    grid-gap: 30px;   
 }
 
 .botao > a{
     color: white;
-    font-family: sans-serif;
+    font-family: 'Old Standard TT', coursive;
     font-size: 10px ;
     height: 20px;
     border-radius: 20px;
@@ -150,7 +150,7 @@ body{
     border-radius: 20px;
     text-decoration: none;
     font-size: 18px;
-    font-family: 'Bebas Neue', coursive;
+    font-family: 'Old Standard TT', coursive;
     cursor: pointer;
     position: relative;
     z-index: 1;
@@ -184,15 +184,15 @@ button:hover:after {
     width: 5.5em;
     height: 2em;
     margin: 0.5em;
-    left: 5vw;
+    left: 1vw;
     top: 2.5vh;
-    background: #0d1117;
-    color:rgb(233, 231, 231);
+    background: transparent;
+    color: rgb(0, 0, 0);
     border: 2px solid rgb(233, 231, 231);
     border-radius: 15px;
     text-decoration: none;
-    font-size: 15px;
-    font-family: 'Bebas Neue', ;
+    font-size: 16px;
+    font-family: 'Old Standard TT', coursive;
     cursor: pointer;
     position: relative;
     z-index: 1;
@@ -234,7 +234,7 @@ button:hover:after {
 /* Textos */
 .titulo{
     font-size: 30px;
-    font-family: 'Mate SC', coursive;
+    font-family: 'Old Standard TT', coursive;
     margin: 0 0 0 -270px;
     color: rgb(233, 231, 231);
     position: relative;
@@ -243,7 +243,7 @@ button:hover:after {
 
 .subtitulo{
     font-size: 18px;
-    font-family: 'Mate SC', coursive;
+    font-family: 'Old Standard TT', coursive;
     margin: 0 0 0 -4.5vw;
     background-color: white (128, 128, 128, 0.493);
     width: 580px;
@@ -260,7 +260,7 @@ label {
     display: flex;
     cursor: pointer;
     transition: .5s ease-in-out;
-    font-family: 'Mate SC', coursive;
+    font-family: 'Old Standard TT', coursive;
   }
   
   .input2 {

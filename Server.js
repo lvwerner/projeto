@@ -15,7 +15,7 @@ const connection = mysql.createConnection({
   host: '127.0.0.1',
   user: 'root',
   password: 'root',
-  database: 'mhcar',
+  database: 'mhome',
 });
 
 connection.connect(function (err) {
@@ -36,7 +36,7 @@ app.post('/login', (req, res) => {
   let username = req.body.username;
   let password = req.body.password;
   
-  connection.query("SELECT * FROM cliente where email = '" + username + "'" , function (err, rows, fields) {
+  connection.query("SELECT * FROM user where email = '" + username + "'" , function (err, rows, fields) {
     console.log("Results:", rows);
     if (!err) {
       if (rows.length > 0) {
@@ -63,9 +63,10 @@ app.post('/cadastro', (req, res) => {
   let sobrenome =req.body.sobrenome;
   let cpf =req.body.cpf;
   let email = req.body.email;
-  let senha = req.body.senha;
+  let password = req.body.password;
+
   
-  connection.query( "INSERT INTO cliente( `nome`, `sobrenome`, `cpf`,  `email`, `senha` ) VALUES  ('" + nome + "','" + sobrenome + "','" + cpf + "','" + email + "','" + senha + "')", function (err, rows, fields) {
+  connection.query( "INSERT INTO `user`(`nome`, `sobrenome`, `cpf`, `email`,`senha`) VALUES  ('" + nome + "','" + sobrenome + "','" + cpf + "','" + email + "','" + password + "')", function (err, rows, fields) {
 
 
     

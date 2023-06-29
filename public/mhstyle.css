@@ -19,15 +19,15 @@ body{
 
 /* Estilização dos botões */
 .botao {
-    height: 50%;
+    height: 80%;
     display: inline-grid;
-    grid-template-columns: repeat(4, 80px);
-    grid-gap: 20px;    
+    grid-template-columns: repeat(4, 70px);
+    grid-gap: 30px;   
 }
 
 .botao > a{
     color: white;
-    font-family: sans-serif;
+    font-family: 'Old Standard TT', coursive;
     font-size: 10px ;
     height: 20px;
     border-radius: 20px;
@@ -83,7 +83,7 @@ body{
     background-image: url("https://www.10wallpaper.com/wallpaper/1366x768/1408/Beautiful_night_scenery_Galaxy_HD_Wallpaper_05_1366x768.jpg");
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
-    font-family:sans-serif;
+    font-family:'Old Standard TT', coursive;
 }
 
 .principal >img{
@@ -94,7 +94,7 @@ body{
 /* Textos */
 .titulo{
     font-size: 120px;
-    font-family: 'Alfa Slab One', coursive;
+    font-family: 'Old Standard TT', coursive;
     margin: 8vh 0 0 8vw;
     background: -webkit-linear-gradient(#dbdbdb, #03eebb);
     -webkit-background-clip: text;
@@ -110,7 +110,7 @@ body{
     width: 580px;
     height: 60px;
     border-radius: 10px;
-    font-family: 'Abril Fatface', coursive;
+    font-family: 'Old Standard TT', coursive;
     color: rgb(255, 255, 255);
 }
 
@@ -188,7 +188,7 @@ body{
     border-radius: 20px;
     text-decoration: none;
     font-size: 18px;
-    font-family: 'Bebas Neue', coursive;
+    font-family: 'Old Standard TT', coursive;
     cursor: pointer;
     position: relative;
     z-index: 1;
@@ -222,15 +222,15 @@ button:hover:after {
     width: 5.5em;
     height: 2em;
     margin: 0.5em;
-    left: 5vw;
+    left: 1vw;
     top: 2.5vh;
     background: transparent;
     color: rgb(0, 0, 0);
-    border: 2px solid rgb(233, 231, 231);;
-    border-radius: 20px;
+    border: 2px solid rgb(233, 231, 231);
+    border-radius: 15px;
     text-decoration: none;
-    font-size: 15px;
-    font-family: 'Bebas Neue', ;
+    font-size: 16px;
+    font-family: 'Old Standard TT', coursive;
     cursor: pointer;
     position: relative;
     z-index: 1;
