@@ -213,50 +213,50 @@ button:hover:after {
 
 /* Textos */
 .titulo{
-    font-size: 30px;
-    font-family: 'Old Standard TT', coursive;
-    margin: 0 0 0 -270px;
-    color: rgb(199, 199, 199); 
+  font-size: 30px;
+  font-family: 'Old Standard TT', coursive;
+  margin: 0 0 0 -270px;
+  color: rgb(199, 199, 199); 
 }
 
 .subtitulo{
-    font-size: 18px;
-    font-family:'Old Standard TT', coursive;
-    margin: 0 0 0 -130px;
-    background-color: white (128, 128, 128, 0.493);
-    width: 580px;
-    height: 60px;
-    border-radius: 10px;
-    color: rgb(199, 199, 199);
+  font-size: 18px;
+  font-family:'Old Standard TT', coursive;
+  margin: 0 0 0 -130px;
+  background-color: white (128, 128, 128, 0.493);
+  width: 580px;
+  height: 60px;
+  border-radius: 10px;
+  color: rgb(199, 199, 199);
 }
 
 .texto3{
-    font-size: 22px;
-    color:rgb(233, 231, 231);
-    margin: 0 0 0 1vw;
-    font-family:'Old Standard TT', coursive;
+  font-size: 22px;
+  color:rgb(233, 231, 231);
+  margin: 0 0 0 1vw;
+  font-family: 'Old Standard TT', coursive;
 }
 
 .titulo2{
-    font-size: 25px;
-    margin-top: 5vh;
-    margin-left: 2vw;
-    color: rgb(233, 231, 231);
-    font-family:'Old Standard TT', coursive;
+  font-size: 25px;
+  margin-top: 5vh;
+  margin-left: 2vw;
+  color: rgb(233, 231, 231);
+  font-family: 'Old Standard TT', coursive;
 }
 
 .forma{
-    font-size: 15px;
-    text-align: center;
-    color: rgb(233, 231, 231);
-    font-family:'Old Standard TT', coursive;
+  font-size: 15px;
+  text-align: center;
+  color: rgb(233, 231, 231);
+  font-family:'Old Standard TT', coursive;
 }
 
 .texto2{
-    font-size: 18px;
-    color:rgb(233, 231, 231);
-    margin: 3vh 0 0 1vw;
-    font-family:'Old Standard TT', coursive;
+  font-size: 18px;
+  color:rgb(233, 231, 231);
+  margin: 0 0 0 1vw;
+  font-family: 'Old Standard TT', coursive;
 }
 
 /* Div fundo */

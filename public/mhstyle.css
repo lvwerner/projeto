@@ -94,7 +94,7 @@ body{
 /* Textos */
 .titulo{
     font-size: 120px;
-    font-family: 'Old Standard TT', coursive;
+    font-family: 'Abril Fatface', coursive; 
     margin: 8vh 0 0 8vw;
     background: -webkit-linear-gradient(#dbdbdb, #03eebb);
     -webkit-background-clip: text;
