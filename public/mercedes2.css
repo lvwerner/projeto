@@ -234,7 +234,7 @@ button:hover:after {
     font-size: 22px;
     color:rgb(233, 231, 231);
     margin: 0 0 0 1vw;
-    font-family:'Old Standard TT', coursive;
+    font-family: 'Old Standard TT', coursive;
 }
 
 .titulo2{
@@ -249,7 +249,7 @@ button:hover:after {
     font-size: 15px;
     text-align: center;
     color: rgb(233, 231, 231);
-    font-family: 'Old Standard TT', coursive;
+    font-family:'Old Standard TT', coursive;
 }
 
 .texto2{
