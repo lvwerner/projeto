@@ -373,12 +373,12 @@ label {
 }
   
 .reserva {
-    width: 140px;
-    height: 40px;
+    width: 14vw;
+    height: 6vh;
     margin-left: 27vh;
     background-image: linear-gradient(rgb(22, 141, 107), rgb(13, 102, 77));
     border: none;
-    border-radius: 20px;
+    border-radius: 10px;
     color: black;
     font-weight: 600;
     display: flex;
@@ -407,45 +407,47 @@ label {
   }
 
   .imagenzinha{
-    border: solid 3px white;
     height: 30vh;
     width: 30vw;
     border-radius: 10px;
     margin: 4px;
     margin-top: 5vh;
+    background-color: #0d1117;
   }
-<<<<<<< HEAD:public/sacola.css
    /* Estilos para o pop-up */
    .popup {
     display: none;
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 300px;
+    width: 30vw;
     padding: 20px;
     background-color: black;
-    border: 1px solid #ccc;
     border-radius: 5px;
     text-align: center;
   }
 
   .checkmark {
-/* position: relative; */
 height: 100%;
-width: 100%;  }
+width: 100%;  
+background-color: #0d1117;
+}
 
 .res{
     font-family: 'Abril Fatface', coursive;
-    margin: 0 0 0 3vw;
+    margin: 5vh 0 0 6.5vw;
     color: #ccc;
     position: absolute;
+    background-color: #0d1117;
 }
- 
-=======
-
-  .card,
-  .card__chip {
+.res2{
+  font-family: 'Abril Fatface', coursive;
+  margin-top: -5vh;
+  margin-left: 9vw;
+  color: #ccc;
+  position: absolute;
+}
+  .card, .card__chip {
     overflow: hidden;
     position: relative;
   }
@@ -682,8 +684,6 @@ width: 100%;  }
         left: 50%;
         transform: translate(-50%, -50%);
         padding: 20px;
-        background-color: #fff;
-        border: 1px solid #ccc;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         z-index: 9999;
       }
@@ -712,4 +712,4 @@ width: 100%;  }
         cursor: pointer;
         margin-top: 10px;
       }
->>>>>>> 4ad4619417308da1b991e22ac375f5aec366e5e5:assets/sacola.css
+
