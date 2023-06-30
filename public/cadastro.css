@@ -18,7 +18,7 @@ body
     background-repeat: no-repeat;
 }
 
-.box {
+.wrapper {
     height: 500px;
     width: 400px;
     border-radius: 0.75rem;
@@ -52,29 +52,37 @@ h2 {
     text-align: center;
     margin-top: 12px;
 }
-
-.inputBox {
+.caixa2{
+    margin: 10vh 0 0 0;
+}
+.input-box {
     position: relative;
-    width: 300px;
-
+    width: 25vw;
 }
 
-.inputBox input 
+.input-box input 
 {
     position: relative;
     width: 100%;
-    height: 20px;
+    height: 4.5vh;
     padding: 8px 8px 8px;
     outline: none;
     box-shadow: none;
+    border-radius: 5px;
     border: none;
-    color: rgb(233, 231, 231);
+    color: #0d1117;
     letter-spacing: 0.05em;
     transition: 0.5s;
     z-index: 10;
+    margin-top: 2vh;
+    background-color: #242931;
 }
-
-.inputBox span {
+.input-box input:hover{
+    border: 1px solid rgb(26, 121, 94);
+    transition: 0.5s;
+    filter: drop-shadow(0 0 5px rgb(26, 121, 94));
+}
+.input-box span {
     position: absolute;
     left: 0;
     padding: 8px 0px 10px;
@@ -84,28 +92,16 @@ h2 {
     letter-spacing: 0.05em;
     transition: 0.5s;
 }
-.inputBox input:valid ~ span,
-.inputBox input:focus ~ span 
+.input-box input:valid ~ span,
+.input-box input:focus ~ span 
 {
     color: #000000;
     transform: translateX(0px) translateY(-34px);
     font-size: 0.75em;
 }
-.inputBox i 
-{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 1px;
-    border-radius: 4px;
-    overflow: hidden;
-    transition: 0.5s;
-    pointer-events: none;
-    z-index: 9;
-}
-.inputBox input:valid ~ i,
-.inputBox input:focus ~ i 
+
+.input-box input:valid ~ i,
+.input-box input:focus ~ i 
 {
     height: 44px;
 }
@@ -130,36 +126,40 @@ input[type="submit"]
 {
     border: none;
     outline: none;
-    padding: 8px 25px;
+    padding: 12px;
     background:  rgb(26, 121, 94);
     cursor: pointer;
     border-radius: 4px;
     font-weight: 600;
-    width: 140px; 
-    height: 40px;
+    width: 14vw; 
+    height: 6vh;
 }
 input[type="submit"]:active 
 {
     opacity: 0.5;
 }
-
-name{
-    font-size: 11px;
-    position: relative;
-    width: 100%;
-    height: 20px;
-    padding: 8px 8px 8px;
-    background:  #242931;
-    outline: none;
-    box-shadow: none;
-    border: none;
-    color: rgb(233, 231, 231);
-    font-size: 13px;
-    letter-spacing: 0.05em;
-    transition: 0.5s;
-    z-index: 10;
+.policy{
+    font-size: 12px;
+    font-weight: 0;
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: 0.2fr 3fr;
+    grid-column-gap: 1vw;
 }
 
+.text{
+    font-size: 12px;
+}
+.text a {
+    text-decoration: none;
+    color:rgb(26, 121, 94)
+}
+.cad{
+    font-size: 30px;
+    color: aliceblue;
+    position: absolute;
+    padding: 15px;
+}
 .cadastrousuario{
     font-size: 10px;
     color: rgb(233, 231, 231);
