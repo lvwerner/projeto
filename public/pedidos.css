@@ -268,6 +268,7 @@ button:hover:after {
     display: grid;
     grid-template-rows: repeat(2, 50%);
     grid-template-columns: repeat(2, 50%);
+
 }
 
 /* Imagem */
@@ -286,3 +287,11 @@ button:hover:after {
     margin-left: 1vw;
     border-radius: 10px; 
 }
+
+.linha-horizontal {
+    border-top: 2px solid white;
+    width: 50vw;
+  }
+  
+
+  
