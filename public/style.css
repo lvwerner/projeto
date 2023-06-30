@@ -73,7 +73,7 @@ body{
 
 .logo > img{
     left: 10px;
-    filter: drop-shadow(0 0 3px green);
+    filter: drop-shadow(0 0 3px rgba(12, 14, 175, 0.87));
 }
 
 /* Estilização do rodape */
@@ -186,7 +186,7 @@ button:after {
 
 button:hover:after {
     transform: skewX(-45deg) scale(1, 1);
-    background: rgba(22, 141, 107, 0.63);
+    background: rgba(40, 25, 177, 0.63);
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
@@ -231,10 +231,10 @@ button:hover:after {
 .form-container {
     width: 330px;
     border-radius: 0.75rem;
-    background-color:  #e0dbdb;
+    background-color:  #e5e5e9;
     padding: 2rem;
     color: rgba(243, 244, 246, 1);
-    margin-top: 10vh;
+    margin-top: 14vh;
     margin-left: 35vw;
     position:absolute;
     border: 1px solid rgb(233, 231, 231);;
@@ -246,6 +246,7 @@ button:hover:after {
     font-size: 1.5rem;
     line-height: 2rem;
     font-weight: 700;
+    color: black;
 }
   
 /* Formulário, input e google */
@@ -270,7 +271,7 @@ button:hover:after {
     border-radius: 0.375rem;
     border: 1px solid black;
     outline: 0;
-    background-color: rgba(170, 168, 168);
+    background-color: rgb(217 212 212);
     padding: 0.75rem 1rem;
     color: rgba(243, 244, 246, 1);
 }
@@ -289,7 +290,7 @@ button:hover:after {
 }
   
 .forgot a,.signup a {
-    color: rgb(233, 231, 231);
+    color: black;
     text-decoration: none;
     font-size: 14px;
 }
@@ -330,7 +331,7 @@ button:hover:after {
     padding-right: 0.75rem;
     font-size: 0.875rem;
     line-height: 1.25rem;
-    color: rgb(233, 231, 231);
+    color: black;
 }
   
 .social-icons {
