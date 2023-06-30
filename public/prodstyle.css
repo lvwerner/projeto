@@ -12,8 +12,7 @@ body{
 .cabecalho > div {
     width: 100%;
     height: 100%;
-    background-color: #0d1117;
-    color: black;
+    background-color: #b7c2cf;    color: black;
 }
 
 /* Estilização dos botões */
@@ -25,7 +24,6 @@ body{
 }
 
 .botao > a{
-    color: white;
     font-family: 'Old Standard TT', coursive;
     font-size: 10px ;
     height: 20px;
@@ -38,7 +36,7 @@ body{
 }
 
 .botao:hover >a{
-    background-color: rgba(22, 141, 107, 0.63);
+    background-color:  rgba(12, 14, 175, 0.87);
 }
 
 .botao2{
@@ -46,7 +44,6 @@ body{
     display: inline-grid;
     grid-template-columns: repeat(2, 130px);
     grid-gap: 20px;
-    color: white;
     text-decoration-color: black;
 }
 
@@ -73,7 +70,7 @@ body{
 
 .logo > img{
     left: 10px;
-    filter: drop-shadow(0 0 3px green);
+    filter: drop-shadow(0 0 3px  rgba(12, 14, 175, 0.87));
 }
 
 /* Estilização do rodape */
@@ -83,14 +80,14 @@ body{
     bottom: 0;
     width: 100%;
     height: 30px;
-    background-color:rgba(91, 202, 171, 0.829);
+    background-color: rgba(12, 14, 175, 0.87);
     color: white;
     text-align: right;
 }
 
 /* Estilização do menu suspenso */
 .mainmenubtn {
-    color: white;
+    color: rgba(12, 14, 175, 0.87);
     border: none;
     font-size: 30px;
     cursor: pointer;
@@ -145,7 +142,7 @@ body{
     top: 2vh;
     left: 10vw;
     background: black;
-    color: white;
+    color: rgb(0, 0, 0);
     border: none;
     border-radius: 20px;
     text-decoration: none;
@@ -175,7 +172,7 @@ button:after {
 
 button:hover:after {
     transform: skewX(-45deg) scale(1, 1);
-    background: rgba(22, 141, 107, 0.63);
+    background: rgba(40, 25, 177, 0.63);
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
@@ -187,8 +184,7 @@ button:hover:after {
     left: 1vw;
     top: 2.5vh;
     background: transparent;
-    color: rgb(0, 0, 0);
-    border: 2px solid rgb(233, 231, 231);
+    border: 2px solid rgba(12, 14, 175, 0.87);
     border-radius: 15px;
     text-decoration: none;
     font-size: 16px;
@@ -201,17 +197,16 @@ button:hover:after {
 
 .anone{
     text-decoration: none;
-    color: white;
 }
 
 .anone2{
     text-decoration: none;
-    color: rgb(233, 231, 231);
+    color: black;
 }
 
 /* Div principal */
 .principal{
-    background-color: #0d1117;
+    background-color: #b7c2cf;
     height: 100vh;
     width: 100vw;
 }
@@ -242,7 +237,7 @@ button:hover:after {
     position: absolute;
     transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
     border-radius: 16px;
-    box-shadow: 0 0 20px 8px #d0d0d0;
+    box-shadow: 0 0 10px #d0d0d0;
     overflow: hidden;
     margin: 70px 0 0 40px;
     text-align: center;
@@ -284,7 +279,7 @@ button:hover:after {
     position: absolute;
     transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
     border-radius: 16px;
-    box-shadow: 0 0 20px 8px #d0d0d0;
+    box-shadow: 0 0 10px #d0d0d0;
     overflow: hidden;
     margin: 70px 0 0 380px;
     text-align: center;
@@ -326,7 +321,7 @@ button:hover:after {
     position: absolute;
     transition: all -0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
     border-radius: 16px;
-    box-shadow: 0 0 20px 8px #d0d0d0;
+    box-shadow: 0 0 10px #d0d0d0;
     overflow: hidden;
     margin: 70px 0 0 720px;
     text-align: center;
@@ -383,9 +378,9 @@ button:hover:after {
     margin-left: 30vw;
     margin-top: 3vh;
     font-family: 'Old Standard TT', coursive;
-    border-bottom: 2px solid rgb(0, 255, 208);
+    border-bottom: 2px solid rgba(12, 14, 175, 0.87);
     width: 40vw;
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
    
 }
@@ -394,44 +389,44 @@ button:hover:after {
 .vermais{
     height: 2vh;
     width: 8vw;
-    border: 1px solid rgb(7, 143, 86);
+    border: 1px solid rgba(12, 14, 175, 0.87);
     position: relative;
     border-radius: 15px;
     padding: 5px 10px 10px 10px;
     left: 3.5vw;
-    background-color: rgba(22, 141, 107, 0.603);
+    background-color: rgba(12, 14, 175, 0.87);
     text-decoration: none;
     color: white;
-    filter: drop-shadow(0 0 5px rgb(5, 156, 119));
+    filter: drop-shadow(0 0 5px rgba(0, 4, 255, 0.87));
     font-size: 12px;
 }
 
 .vermais2{
     height: 2vh;
     width: 8vw;
-    border: 1px solid rgb(7, 143, 86);
+    border: 1px solid rgba(12, 14, 175, 0.87);
     position: relative;
     border-radius: 15px;
     padding: 5px 10px 10px 10px;
     left: 3.5vw;
-    background-color: rgba(22, 141, 107, 0.603);
+    background-color: rgba(12, 14, 175, 0.87);
     text-decoration: none;
     color: white;
-    filter: drop-shadow(0 0 5px rgb(5, 156, 119));
+    filter: drop-shadow(0 0 5px rgba(0, 4, 255, 0.87));
     font-size: 12px;
 }
 
 .vermais3{
     height: 2vh;
     width: 8vw;
-    border: 1px solid rgb(7, 143, 86);
+    border: 1px solid rgba(12, 14, 175, 0.87);
     position: relative;
     border-radius: 15px;
     padding: 5px 10px 10px 10px;
     left: 3.5vw;
-    background-color: rgba(22, 141, 107, 0.603);
+    background-color: rgba(12, 14, 175, 0.87);
     text-decoration: none;
     color: white;
-    filter: drop-shadow(0 0 5px rgb(5, 156, 119));
+    filter: drop-shadow(0 0 5px rgba(0, 4, 255, 0.87));
     font-size: 12px;
 }
