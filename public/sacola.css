@@ -7,13 +7,12 @@ body{
   width: 100%;
   height: 100px;
   display: flex;
-  /* position: fixed; */
 }
 
 .cabecalho > div {
   width: 100%;
   height: 100%;
-  background-color: #0d1117;
+  background-color: #f2f6fc;
   color: black;
 }
 
@@ -27,7 +26,7 @@ body{
 
 .botao > a{
   color: white;
-  font-family:'Old Standard TT', coursive;
+  font-family: 'Old Standard TT', coursive;
   font-size: 10px ;
   height: 20px;
   border-radius: 20px;
@@ -56,7 +55,7 @@ body{
   background-color: white;
   cursor: pointer; 
 }
-
+   
 /* Estilização da logo */
 .log1{
   width: 100px;
@@ -74,7 +73,7 @@ body{
 
 .logo > img{
   left: 10px;
-  filter: drop-shadow(0 0 3px green);
+  filter: drop-shadow(0 0 3px rgba(12, 14, 175, 0.87));
 }
 
 /* Estilização do rodape */
@@ -84,7 +83,7 @@ body{
   bottom: 0;
   width: 100%;
   height: 30px;
-  background-color:rgba(91, 202, 171, 0.829);
+  background-color: rgba(12, 14, 175, 0.87);
   color: white;
   text-align: right;
 }
@@ -92,7 +91,7 @@ body{
 /* Estilização menu suspenso  */
 .mainmenubtn {
   background-color: transparent;
-  color: white;
+  color: rgba(12, 14, 175, 0.87);
   border: none;
   font-size: 30px;
   cursor: pointer;
@@ -118,20 +117,18 @@ body{
 .dropdown-child {
   display: none;
   background-color: white;
-  min-width: 20px;  
+  min-width: 20px;
 }
 
 .dropdown-child a {
-  color: black;
-  font-size: 16px;
-  font-family: 'Old Standard TT', coursive;
+  color:black;
   padding: 20px;
   text-decoration: none;
   display: block;
 }
 
 .dropdown:hover .dropdown-child {
-  display: block;    
+  display: block;
 }
 
 .menu{
@@ -141,22 +138,34 @@ body{
 
 /* Estilização dos botões */
 .btn {
-  width: 5.5em;
-  height: 2em;
+  width: 10vw;
+  height: 2vh;
   margin: 0.5em;
   top: 2vh;
+  text-align: center;
+  padding-top: 1vh;
+  padding-bottom: 2vh;
   left: 10vw;
-  background: black;
-  color: white;
-  border: none;
-  border-radius: 20px;
+  background: transparent;
+  border: 2px solid red; 
+  border-radius: 15px;
   text-decoration: none;
   font-size: 18px;
-  font-family: 'Old Standard TT', coursive;
   cursor: pointer;
   position: relative;
   z-index: 1;
   overflow: hidden;
+}
+
+.btn:hover a{
+  color: white;
+  transition: all 0.3s;
+}
+
+.btn:hover{
+  background-color: red;
+  color: white;
+  transition: all 0.3s;
 }
 
 button:hover {
@@ -177,7 +186,7 @@ button:after {
 
 button:hover:after {
   transform: skewX(-45deg) scale(1, 1);
-  background: rgba(22, 141, 107, 0.63);
+  background: rgba(40, 25, 177, 0.63);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -190,7 +199,7 @@ button:hover:after {
   top: 2.5vh;
   background: transparent;
   color: rgb(0, 0, 0);
-  border: 2px solid rgb(233, 231, 231);
+  border: 2px solid rgba(12, 14, 175, 0.87);
   border-radius: 15px;
   text-decoration: none;
   font-size: 16px;
@@ -203,12 +212,12 @@ button:hover:after {
 
 .anone{
   text-decoration: none;
-  color: white;
+  color: red;
 }
 
 .anone2{
   text-decoration: none;
-  color: rgb(233, 231, 231);
+  color: black;
 }
 
 /* Textos */
@@ -216,7 +225,7 @@ button:hover:after {
   font-size: 30px;
   font-family: 'Old Standard TT', coursive;
   margin: 0 0 0 -270px;
-  color: rgb(199, 199, 199); 
+  color: black;
 }
 
 .subtitulo{
@@ -227,12 +236,12 @@ button:hover:after {
   width: 580px;
   height: 60px;
   border-radius: 10px;
-  color: rgb(199, 199, 199);
+  color: black;
 }
 
 .texto3{
   font-size: 22px;
-  color:rgb(233, 231, 231);
+  color:black;
   margin: 0 0 0 1vw;
   font-family: 'Old Standard TT', coursive;
 }
@@ -241,20 +250,20 @@ button:hover:after {
   font-size: 25px;
   margin-top: 5vh;
   margin-left: 2vw;
-  color: rgb(233, 231, 231);
+  color: black;
   font-family: 'Old Standard TT', coursive;
 }
 
 .forma{
   font-size: 15px;
   text-align: center;
-  color: rgb(233, 231, 231);
+  color: black;
   font-family:'Old Standard TT', coursive;
 }
 
 .texto2{
   font-size: 18px;
-  color:rgb(233, 231, 231);
+  color:black;
   margin: 0 0 0 1vw;
   font-family: 'Old Standard TT', coursive;
 }
@@ -263,14 +272,14 @@ button:hover:after {
 .principal {
   width: 100%;
   height: 100vh;
-  background-color: #0d1117;
+  background-color: #f2f6fc;
 }
 
 /* Contornos */
 .sobrepor{
   width: 78vw;
   height: 70vh;
-  background-color: #0d1117;
+  background-color: #e5e5e9;
   margin: auto;
   margin-top: 5vh;
   margin-left: 11vw;
@@ -282,19 +291,19 @@ button:hover:after {
 }
 
 .contorno{
-  border: solid 2px #5bcaabd3;
+  border: solid 2px  rgba(12, 14, 175, 0.87);
   border-radius: 10px;
   margin: 20px;
 }
 
 .contorno2{
-  border: solid 2px rgba(91, 202, 171, 0.829);
+  border: solid 2px  rgba(12, 14, 175, 0.87);
   border-radius: 10px;
   margin: 20px;
 }
 
 /* Botão reservar e lista de selecionar */
-label {
+.label {
   color: black;
   font-size: 14px;
   justify-content: center;
@@ -307,8 +316,8 @@ label {
 .input2 {
   width: 320px;
   height: 15px;
-  background: rgba(22, 141, 107, 0.63);
-  color: black;
+  background:  rgba(12, 14, 175, 0.87);
+  color: white;
   padding: 10px;
   border: none;
   outline: none;
@@ -319,6 +328,8 @@ label {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  text-align: center;
+  align-items: center;
 } 
 
 .container label {
@@ -328,7 +339,6 @@ label {
   position: relative;
   overflow: hidden;
   margin-bottom: 0.375em;
-
 }
 
 .container  label input {
@@ -337,12 +347,12 @@ label {
 }
 
 .container label input:checked + span {
-  background-color: rgba(22, 141, 107, 0.63);
-  color: black;
+  background-color:  rgba(12, 14, 175, 0.87);
+  color: white;
 }
 
 .container label input:checked + span:before {
-  box-shadow: inset 0 0 0 0.4375em rgba(22, 141, 107, 0.63);
+  box-shadow: inset 0 0 0 0.4375em rgba(12, 14, 175, 0.87);
 }
 
 .container label span {
@@ -351,7 +361,7 @@ label {
   padding: 0.375em 0.75em 0.375em 0.375em;
   border-radius: 99em;
   transition: 0.25s ease;
-  color: rgb(233, 231, 231);
+  color: black;
   font-size: 15px;
 }
 
@@ -369,17 +379,17 @@ label {
   border-radius: 50%;
   margin-right: 0.375em;
   transition: 0.25s ease;
-  box-shadow: inset 0 0 0 0.125em rgba(22, 141, 107, 0.63);
+  box-shadow: inset 0 0 0 0.125em  rgba(12, 14, 175, 0.87);
 }
 
 .reserva {
   width: 140px;
   height: 40px;
   margin-left: 27vh;
-  background-image: linear-gradient(rgb(22, 141, 107), rgb(13, 102, 77));
+  background-image: linear-gradient( rgba(15, 18, 204, 0.87), rgba(12, 14, 175, 0.87));
   border: none;
   border-radius: 20px;
-  color: black;
+  color: white;
   font-weight: 600;
   display: flex;
   align-items: center;
@@ -394,7 +404,7 @@ label {
 }
 
 .label{
-  color: rgb(233, 231, 231);
+  color:black;
 }
 
 /* Informações pedido */
@@ -407,7 +417,7 @@ label {
 }
 
 .imagenzinha{
-  border: solid 3px white;
+  border: solid 3px  rgba(12, 14, 175, 0.87);;
   height: 30vh;
   width: 30vw;
   border-radius: 10px;
@@ -419,19 +429,18 @@ label {
    .popup {
       display: none;
       position: fixed;
-      top: 50%;
-      left: 50%;
-      width: 30vw;
+      top: 22vh;
+      left: 35vw;
+      width: 25vw;
       padding: 20px;
       background-color: black;
-      border-radius: 5px;
       text-align: center;
     }
   
     .checkmark {
   height: 100%;
   width: 100%;  
-  background-color: #0d1117;
+  background-color: rgba(0, 0, 0, 0.37);
   }
   
   .res{
@@ -439,7 +448,7 @@ label {
       margin: 5vh 0 0 6.5vw;
       color: #ccc;
       position: absolute;
-      background-color: #0d1117;
+      background-color: rgba(0, 0, 0, 0.37);
   }
   .res2{
     font-family: 'Abril Fatface', coursive;
@@ -448,188 +457,7 @@ label {
     color: #ccc;
     position: absolute;
   }
-    .card, .card__chip {
-      overflow: hidden;
-      position: relative;
-    }
-    
-    .card,
-    .card__chip-texture,
-    .card__texture {
-      animation-duration: 3s;
-      animation-timing-function: ease-in-out;
-      animation-iteration-count: infinite;
-    }
-    
-    .card {
-      animation-name: rotate_500;
-      background-color: var(--primary);
-      background-image: radial-gradient(circle at 100% 0%,hsla(0,0%,100%,0.08) 29.5%,hsla(0,0%,100%,0) 30%),
-            radial-gradient(circle at 100% 0%,hsla(0,0%,100%,0.08) 39.5%,hsla(0,0%,100%,0) 40%),
-            radial-gradient(circle at 100% 0%,hsla(0,0%,100%,0.08) 49.5%,hsla(0,0%,100%,0) 50%);
-      border-radius: 0.5em;
-      box-shadow: 0 0 0 hsl(0,0%,80%),
-            0 0 0 hsl(0,0%,100%),
-            -0.2rem 0 0.75rem 0 hsla(0,0%,0%,0.3);
-      color: hsl(0,0%,100%);
-      width: 10.3em;
-      height: 6.8em;
-      transform: translate3d(0,0,0);
-    }
-    
-    .card__info,
-    .card__chip-texture,
-    .card__texture {
-      position: absolute;
-    }
-    
-    .card__chip-texture,
-    .card__texture {
-      animation-name: texture;
-      top: 0;
-      left: 0;
-      width: 200%;
-      height: 100%;
-    }
-    
-    .card__info {
-      font: 0.75em/1 "DM Sans", sans-serif;
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      padding: 0.75rem;
-      inset: 0;
-    }
-    
-    .card__logo,
-    .card__number {
-      width: 100%;
-    }
-    
-    .card__logo {
-      font-weight: bold;
-      font-style: italic;
-    }
-    
-    .card__chip {
-      background-image: linear-gradient(hsl(0,0%,70%),hsl(0,0%,80%));
-      border-radius: 0.2rem;
-      box-shadow: 0 0 0 0.05rem hsla(0,0%,0%,0.5) inset;
-      width: 1.25rem;
-      height: 1.25rem;
-      transform: translate3d(0,0,0);
-    }
-    
-    .card__chip-lines {
-      width: 100%;
-      height: auto;
-    }
-    
-    .card__chip-texture {
-      background-image: linear-gradient(-80deg,hsla(0,0%,100%,0),hsla(0,0%,100%,0.6) 48% 52%,hsla(0,0%,100%,0));
-    }
-    
-    .card__type {
-      align-self: flex-end;
-      margin-left: auto;
-    }
-    
-    .card__digit-group,
-    .card__exp-date,
-    .card__name {
-      background: linear-gradient(hsl(0,0%,100%),hsl(0,0%,85%) 15% 55%,hsl(0,0%,70%) 70%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-family: 'Old Standard TT', coursive;
-      filter: drop-shadow(0 0.05rem hsla(0,0%,0%,0.3));
-    }
-    
-    .card__number {
-      font-size: 0.8rem;
-      display: flex;
-      justify-content: space-between;
-    }
-    
-    .card__valid-thru,
-    .card__name {
-      text-transform: uppercase;
-    }
-    
-    .card__valid-thru,
-    .card__exp-date {
-      margin-bottom: 0.25rem;
-      width: 50%;
-    }
-    
-    .card__valid-thru {
-      font-size: 0.3rem;
-      padding-right: 0.25rem;
-      text-align: right;
-    }
-    
-    .card__exp-date,
-    .card__name {
-      font-size: 0.6rem;
-    }
-    
-    .card__exp-date {
-      padding-left: 0.25rem;
-    }
-    
-    .card__name {
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      width: 6.25rem;
-    }
-    
-    .card__vendor,
-    .card__vendor:before,
-    .card__vendor:after {
-      position: absolute;
-    }
-    
-    .card__vendor {
-      right: 0.375rem;
-      bottom: 0.375rem;
-      width: 2.55rem;
-      height: 1.5rem;
-    }
-    
-    .card__vendor:before,
-    .card__vendor:after {
-      border-radius: 50%;
-      content: "";
-      display: block;
-      top: 0;
-      width: 1.5rem;
-      height: 1.5rem;
-    }
-    
-    .card__vendor:before {
-      background-color: #e71d1a;
-      left: 0;
-    }
-    
-    .card__vendor:after {
-      background-color: #fa5e03;
-      box-shadow: -1.05rem 0 0 #f59d1a inset;
-      right: 0;
-    }
-    
-    .card__vendor-sr {
-      clip: rect(1px,1px,1px,1px);
-      overflow: hidden;
-      position: absolute;
-      width: 1px;
-      height: 1px;
-    }
-    
-    .card__texture {
-      animation-name: texture;
-      background-image: linear-gradient(-80deg,hsla(0,0%,100%,0.3) 25%,hsla(0,0%,100%,0) 45%);
-    }
-     
+ 
     /* Dark theme */
     @media (prefers-color-scheme: dark) {
       :root {
@@ -654,7 +482,7 @@ label {
         animation-timing-function: ease-out;
         box-shadow: 0 0 0 hsl(0,0%,80%),
                 0 0 0 hsl(0,0%,100%),
-                -0.25rem -0.05rem 1rem 0.15rem hsla(0,0%,0%,0.3);
+                -0.25rem -0.05rem 1rem 0.15rem hsla(0, 0%, 0%, 0.089);
         transform: rotateY(0deg);
       }
     
@@ -677,41 +505,6 @@ label {
         transform: translate3d(-50%,0,0);
       }
     }                
-  
-        /* Estilo para o pop-up */
-        .popup {
-          position: fixed;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          padding: 20px;
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-          z-index: 9999;
-        }
-    
-        /* Estilo para o botão de ponto de interrogação */
-        .question-mark-button {
-          font-size: 30px;
-          background-color: #ccc;
-          color: #fff;
-          border: none;
-          border-radius: 50%;
-          width: 40px;
-          height: 40px;
-          cursor: pointer;
-          text-align: center;
-        }
-    
-        /* Estilo para o botão de fechar */
-        .close-button {
-          font-size: 16px;
-          background-color: #ccc;
-          color: #fff;
-          border: none;
-          border-radius: 4px;
-          padding: 8px 12px;
-          cursor: pointer;
-          margin-top: 10px;
-        }
+
   
   

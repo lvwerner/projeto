@@ -1,32 +1,32 @@
 body{
     margin: 0;
-}
-
-/* Estilização do cabeçalho */
-.cabecalho{
+  }
+  
+  /* Estilização do cabeçalho */
+  .cabecalho{
     width: 100%;
     height: 100px;
     display: flex;
-}
-
-.cabecalho > div {
+  }
+  
+  .cabecalho > div {
     width: 100%;
     height: 100%;
-    background-color: #0d1117;
+    background-color: #f2f6fc;
     color: black;
-}
-
-/* Estilização dos botões */
-.botao {
+  }
+  
+  /* Estilização dos botões */
+  .botao {
     height: 80%;
     display: inline-grid;
     grid-template-columns: repeat(4, 70px);
     grid-gap: 30px;   
-}
-
-.botao > a{
+  }
+  
+  .botao > a{
     color: white;
-    font-family:'Old Standard TT', coursive;
+    font-family: 'Old Standard TT', coursive;
     font-size: 10px ;
     height: 20px;
     border-radius: 20px;
@@ -35,62 +35,63 @@ body{
     color: black;
     text-align: center;
     text-decoration: none;
-}
-
-.botao:hover >a{
+  }
+  
+  .botao:hover >a{
     background-color: rgba(22, 141, 107, 0.63);
-}
-
-.botao2{
+  }
+  
+  .botao2{
     height: 50%;
     display: inline-grid;
     grid-template-columns: repeat(2, 130px);
     grid-gap: 20px;
     color: white;
     text-decoration-color: black;
-}
-
-.botao2 > a{
+  }
+  
+  .botao2 > a{
     text-decoration: none;
     background-color: white;
     cursor: pointer; 
-}
-
-/* Estilização da logo */
-.log1{
+  }
+     
+  /* Estilização da logo */
+  .log1{
     width: 100px;
     text-align: center;
-}
-
-.logo{
+  }
+  
+  .logo{
     width: 80px;
     text-align: center;
     display: block;
     block-size: 100px;
     margin-left: 22px;
     margin-top: 1vh;
-}
-
-.logo > img{
+  }
+  
+  .logo > img{
     left: 10px;
-    filter: drop-shadow(0 0 3px green);
-}
-
-/* Estilização do rodape */
-.rodape{
+    filter: drop-shadow(0 0 3px rgba(12, 14, 175, 0.87));
+  }
+  
+  /* Estilização do rodape */
+  .rodape{
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     height: 30px;
-    background-color:rgba(91, 202, 171, 0.829);
+    background-color: rgba(12, 14, 175, 0.87);
     color: white;
     text-align: right;
-}
-
-/* Estilização menu suspenso */
-.mainmenubtn {
-    color: white;
+  }
+  
+  /* Estilização menu suspenso  */
+  .mainmenubtn {
+    background-color: transparent;
+    color: rgba(12, 14, 175, 0.87);
     border: none;
     font-size: 30px;
     cursor: pointer;
@@ -98,70 +99,80 @@ body{
     margin-top:2px;
     margin-right: 30px;
     overflow: hidden;
-}
-
-.mainmenubtn:hover {
-    color: black;
+  }
+  
+  .mainmenubtn:hover {
+    background-color: transparent;
     left: 100px;
-}
-
-.dropdown {
+  }
+  
+  .dropdown {
     position: relative;
     display: inline-block;
     width: 150px;
     height: 100px;
     align-items: right;
-}
-
-.dropdown-child {
+  }
+  
+  .dropdown-child {
     display: none;
     background-color: white;
     min-width: 20px;
-}
-
-.dropdown-child a {
-    color: black;
-    font-size: 16px;
-    font-family: 'Old Standard TT', coursive;
+  }
+  
+  .dropdown-child a {
+    color:black;
     padding: 20px;
     text-decoration: none;
     display: block;
-}
-
-.dropdown:hover .dropdown-child {
+  }
+  
+  .dropdown:hover .dropdown-child {
     display: block;
-}
-
-.menu{
+  }
+  
+  .menu{
     width: 0px;
     text-align: right;
-}
-
-/* Estilização dos botões */
-.btn {
-    width: 5.5em;
-    height: 2em;
+  }
+  
+  /* Estilização dos botões */
+  .btn {
+    width: 10vw;
+    height: 2vh;
     margin: 0.5em;
     top: 2vh;
+    text-align: center;
+    padding-top: 1vh;
+    padding-bottom: 2vh;
     left: 10vw;
-    background: black;
-    color: white;
-    border: none;
-    border-radius: 20px;
+    background: transparent;
+    border: 2px solid red; 
+    border-radius: 15px;
     text-decoration: none;
     font-size: 18px;
-    font-family:'Old Standard TT', coursive;
     cursor: pointer;
     position: relative;
     z-index: 1;
     overflow: hidden;
-}
-
-button:hover {
+  }
+  
+  .btn:hover a{
+    color: white;
+    transition: all 0.3s;
+  }
+  
+  .btn:hover{
+    background-color: red;
+    color: white;
+    transition: all 0.3s;
+  }
+  
+  button:hover {
     color: black;
-}
-
-button:after {
+  }
+  
+  button:after {
     content: "";
     position: absolute;
     z-index: -1;
@@ -171,16 +182,16 @@ button:after {
     bottom: 0;
     transform: skewX(-45deg) scale(0, 1);
     transition: all 0.5s;
-}
-
-button:hover:after {
+  }
+  
+  button:hover:after {
     transform: skewX(-45deg) scale(1, 1);
-    background: rgba(22, 141, 107, 0.63);
+    background: rgba(40, 25, 177, 0.63);
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
-}
-
-.btn2 {
+  }
+  
+  .btn2 {
     width: 5.5em;
     height: 2em;
     margin: 0.5em;
@@ -188,7 +199,7 @@ button:hover:after {
     top: 2.5vh;
     background: transparent;
     color: rgb(0, 0, 0);
-    border: 2px solid rgb(233, 231, 231);
+    border: 2px solid rgba(12, 14, 175, 0.87);
     border-radius: 15px;
     text-decoration: none;
     font-size: 16px;
@@ -197,17 +208,17 @@ button:hover:after {
     position: relative;
     z-index: 1;
     overflow: hidden;
-}
-
-.anone{
+  }
+  
+  .anone{
     text-decoration: none;
-    color: white;
-}
-
-.anone2{
+    color: red;
+  }
+  
+  .anone2{
     text-decoration: none;
-    color: rgb(233, 231, 231);
-}
+    color: black;
+  }
 
 /* Textos */
 .titulo{
@@ -231,7 +242,7 @@ button:hover:after {
 
 .texto{
     font-size: 20px;
-    color: white;
+    color: black;
     position:absolute;
     margin-left: 27vw;
     margin-top: -25vh;
@@ -240,7 +251,7 @@ button:hover:after {
 
 .texto2{
     font-size: 16px;
-    color: white;
+    color: black;
     position:absolute;
     width: 25vw ;
     font-family: 'Old Standard TT', coursive;
@@ -250,14 +261,14 @@ button:hover:after {
 .principal {
     width: 100vw;
     height: 100vh;
-    background-color: #0d1117;
+    background-color: #f2f6fc;
 }
 
 /* Contorno  */
 .fundo {
     width: 50vw;
     height: 65vh;
-    background-color: #0d1117;
+    background-color: #e5e5e9;
     display: flex;
     flex-wrap: wrap;
     position: relative;

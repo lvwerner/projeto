@@ -7,13 +7,12 @@ body{
     width: 100%;
     height: 100px;
     display: flex;
-    /* position: fixed; */
 }
 
 .cabecalho > div {
     width: 100%;
     height: 100%;
-    background-color: #0d1117;
+    background-color: #f2f6fc;
     color: black;
 }
 
@@ -56,7 +55,7 @@ body{
     background-color: white;
     cursor: pointer; 
 }
-
+     
 /* Estilização da logo */
 .log1{
     width: 100px;
@@ -74,7 +73,7 @@ body{
 
 .logo > img{
     left: 10px;
-    filter: drop-shadow(0 0 3px green);
+    filter: drop-shadow(0 0 3px rgba(12, 14, 175, 0.87));
 }
 
 /* Estilização do rodape */
@@ -84,14 +83,15 @@ body{
     bottom: 0;
     width: 100%;
     height: 30px;
-    background-color: rgba(91, 202, 171, 0.829);
+    background-color: rgba(12, 14, 175, 0.87);
     color: white;
     text-align: right;
 }
 
 /* Estilização menu suspenso  */
 .mainmenubtn {
-    color: white;
+    background-color: transparent;
+    color: rgba(12, 14, 175, 0.87);
     border: none;
     font-size: 30px;
     cursor: pointer;
@@ -102,6 +102,7 @@ body{
 }
 
 .mainmenubtn:hover {
+    background-color: transparent;
     left: 100px;
 }
 
@@ -116,13 +117,11 @@ body{
 .dropdown-child {
     display: none;
     background-color: white;
-    min-width: 20px; 
+    min-width: 20px;
 }
 
 .dropdown-child a {
-    color: black;
-    font-size: 16px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:black;
     padding: 20px;
     text-decoration: none;
     display: block;
@@ -139,23 +138,35 @@ body{
 
 /* Estilização dos botões */
 .btn {
-    width: 5.5em;
-    height: 2em;
+    width: 10vw;
+    height: 2vh;
     margin: 0.5em;
     top: 2vh;
+    text-align: center;
+    padding-top: 1vh;
+    padding-bottom: 2vh;
     left: 10vw;
-    background:#0d1117;
-    color: white;
-    border: none;
-    border-radius: 20px;
+    background: transparent;
+    border: 2px solid red; 
+    border-radius: 15px;
     text-decoration: none;
     font-size: 18px;
-    font-family: 'Old Standard TT', coursive;
     cursor: pointer;
     position: relative;
     z-index: 1;
     overflow: hidden;
-    }
+}
+
+.btn:hover a{
+    color: white;
+    transition: all 0.3s;
+}
+
+.btn:hover{
+    background-color: red;
+    color: white;
+    transition: all 0.3s;
+}
 
 button:hover {
     color: black;
@@ -163,7 +174,6 @@ button:hover {
 
 button:after {
     content: "";
-    background: rgba(22, 141, 107, 0.63);
     position: absolute;
     z-index: -1;
     left: -20%;
@@ -176,6 +186,7 @@ button:after {
 
 button:hover:after {
     transform: skewX(-45deg) scale(1, 1);
+    background: rgba(40, 25, 177, 0.63);
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
@@ -188,7 +199,7 @@ button:hover:after {
     top: 2.5vh;
     background: transparent;
     color: rgb(0, 0, 0);
-    border: 2px solid rgb(233, 231, 231);
+    border: 2px solid rgba(12, 14, 175, 0.87);
     border-radius: 15px;
     text-decoration: none;
     font-size: 16px;
@@ -201,26 +212,26 @@ button:hover:after {
 
 .anone{
     text-decoration: none;
-    color:rgb(233, 231, 231);   
+    color: red;
 }
 
 .anone2{
     text-decoration: none;
-    color: rgb(233, 231, 231);
+    color: black;
 }
 
 /* Div principal */
 .principal {
     width: 100vw;
     height: 100vh;
-    background-color: #0d1117;
+    background-color: #f2f6fc;
 }
 
 /* Contorno */
 .fundo{
     width: 70vh;
     height: 60vh;
-    background-color: #0d1117;
+    background-color: #e5e5e9;
     margin: auto;
     margin-top: 8vh;
     margin-left: 33vw;
@@ -236,7 +247,7 @@ button:hover:after {
     font-size: 30px;
     font-family: 'Old Standard TT', coursive;
     margin: 0 0 0 -270px;
-    color: rgb(233, 231, 231);
+    color: black;
     position: relative;
     margin-left: 0vw;
 }
@@ -249,12 +260,12 @@ button:hover:after {
     width: 42.5vw;
     height: 6.5vh;
     border-radius: 10px;
-    color: rgb(233, 231, 231);
+    color: black;
 }
 
 /* Preenchimento */
 label {
-    color: rgb(233, 231, 231);
+    color: black;
     font-size: 14px;
     justify-content: center;
     display: flex;
@@ -266,8 +277,8 @@ label {
   .quadrado {
     width: 23vw;
     height: 3vh;
-    background: rgba(91, 202, 171, 0.829);
-    color:black;
+    background:  rgba(12, 14, 175, 0.87);
+    color:white;
     padding: 10px;
     border: none;
     outline: none;

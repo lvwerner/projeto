@@ -1,19 +1,14 @@
-body{
-  margin: 0;
-}
-
 /* Estilização do cabeçalho */
 .cabecalho{
   width: 100%;
   height: 100px;
   display: flex;
-  /* position: fixed; */
 }
 
 .cabecalho > div {
   width: 100%;
   height: 100%;
-  background-color: #0d1117;
+  background-color: #f2f6fc;
   color: black;
 }
 
@@ -27,7 +22,7 @@ body{
 
 .botao > a{
   color: white;
-  font-family:'Old Standard TT', coursive;
+  font-family: 'Old Standard TT', coursive;
   font-size: 10px ;
   height: 20px;
   border-radius: 20px;
@@ -74,7 +69,7 @@ body{
 
 .logo > img{
   left: 10px;
-  filter: drop-shadow(0 0 3px green);
+  filter: drop-shadow(0 0 3px rgba(12, 14, 175, 0.87));
 }
 
 /* Estilização do rodape */
@@ -84,14 +79,15 @@ body{
   bottom: 0;
   width: 100%;
   height: 30px;
-  background-color:rgba(91, 202, 171, 0.829);
+  background-color: rgba(12, 14, 175, 0.87);
   color: white;
   text-align: right;
 }
 
 /* Estilização menu suspenso  */
 .mainmenubtn {
-  color: white;
+  background-color: transparent;
+  color: rgba(12, 14, 175, 0.87);
   border: none;
   font-size: 30px;
   cursor: pointer;
@@ -102,6 +98,7 @@ body{
 }
 
 .mainmenubtn:hover {
+  background-color: transparent;
   left: 100px;
 }
 
@@ -120,16 +117,14 @@ body{
 }
 
 .dropdown-child a {
-  color: black;
-  font-size: 16px;
-  font-family: 'Old Standard TT', coursive;
+  color:black;
   padding: 20px;
   text-decoration: none;
   display: block;
 }
 
 .dropdown:hover .dropdown-child {
-  display: block; 
+  display: block;
 }
 
 .menu{
@@ -139,22 +134,34 @@ body{
 
 /* Estilização dos botões */
 .btn {
-  width: 5.5em;
-  height: 2em;
+  width: 10vw;
+  height: 2vh;
   margin: 0.5em;
   top: 2vh;
+  text-align: center;
+  padding-top: 1vh;
+  padding-bottom: 2vh;
   left: 10vw;
-  background: black;
-  color: white;
-  border: none;
-  border-radius: 20px;
+  background: transparent;
+  border: 2px solid red; 
+  border-radius: 15px;
   text-decoration: none;
   font-size: 18px;
-  font-family: 'Old Standard TT', coursive;
   cursor: pointer;
   position: relative;
   z-index: 1;
   overflow: hidden;
+}
+
+.btn:hover a{
+  color: white;
+  transition: all 0.3s;
+}
+
+.btn:hover{
+  background-color: red;
+  color: white;
+  transition: all 0.3s;
 }
 
 button:hover {
@@ -175,7 +182,7 @@ button:after {
 
 button:hover:after {
   transform: skewX(-45deg) scale(1, 1);
-  background: rgba(22, 141, 107, 0.63);
+  background: rgba(40, 25, 177, 0.63);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -188,11 +195,11 @@ button:hover:after {
   top: 2.5vh;
   background: transparent;
   color: rgb(0, 0, 0);
-  border: 2px solid rgb(233, 231, 231);
+  border: 2px solid rgba(12, 14, 175, 0.87);
   border-radius: 15px;
   text-decoration: none;
   font-size: 16px;
-  font-family:'Old Standard TT', coursive;
+  font-family: 'Old Standard TT', coursive;
   cursor: pointer;
   position: relative;
   z-index: 1;
@@ -201,22 +208,15 @@ button:hover:after {
 
 .anone{
   text-decoration: none;
-  color: white;
+  color: red;
 }
 
 .anone2{
   text-decoration: none;
-  color: rgb(233, 231, 231);
+  color: black;
 }
 
 /* Textos */
-.titulo{
-  font-size: 30px;
-  font-family: 'Old Standard TT', coursive;
-  margin: 0 0 0 -270px;
-  color: rgb(233, 231, 231);  
-}
-
 .subtitulo{
   font-size: 18px;
   font-family:'Old Standard TT', coursive;
@@ -261,14 +261,14 @@ label {
 .principal {
   width: 100vw;
   height: 100vh;
-  background-color: #0d1117;
+  background-color: #f2f6fc;
 }
 
 /* Contorno */
 .fundo {
   width: 80%;
   height: 65%;
-  background-color: #0d1117;
+  background-color: #e5e5e9;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -382,7 +382,7 @@ label {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 400px;
-  background-color: #3a3a3a;
+  background-color: #e5e5e9;
   text-align: center;
   border: 1px solid #ffffff;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
@@ -400,7 +400,7 @@ label {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.5);
+  background-color: #e5e5e9bb;
   z-index: 9998;
 }  
   
@@ -421,15 +421,15 @@ label {
   height: 100px;
   resize: none;
   font-size: 15px;
-  color: white;
+  color: black;
   border-radius: 5px;
-  background-color: #3a3a3a;
+  background-color: #e5e5e9;
 }
   
 .popup-submit {
   padding: 10px 20px;
-  background-color:rgb(22, 141, 107);
-  color: rgb(233, 231, 231);
+  background-color: rgba(12, 14, 175, 0.87);
+  color: white;
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -445,9 +445,19 @@ label {
   text-align: center;
   position: absolute;
   cursor: pointer;
-  background:  rgb(22, 141, 107);
-  color: rgb(233, 231, 231);
+  background:   rgba(12, 14, 175, 0.87);
+  color: white;
   padding-top: 8px;
   padding-bottom: -5px;
 }
 
+.h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  color: black;
+}
