@@ -229,6 +229,23 @@ button:hover:after {
     color: black;
 }
 
+.texto{
+    font-size: 20px;
+    color: white;
+    position:absolute;
+    margin-left: 27vw;
+    margin-top: -25vh;
+    font-family: 'Old Standard TT', coursive;
+}
+
+.texto2{
+    font-size: 16px;
+    color: white;
+    position:absolute;
+    width: 25vw ;
+    font-family: 'Old Standard TT', coursive;
+}
+
 /* Div principal */
 .principal {
     width: 100vw;
@@ -252,10 +269,8 @@ button:hover:after {
     grid-template-rows: repeat(2, 50%);
     grid-template-columns: repeat(2, 50%);
 }
-/* .imagem{
-    border: 1px solid white;
-} */
 
+/* Imagem */
 .imagem img{
     height: 30vh;
     width: 22vw;
@@ -270,21 +285,4 @@ button:hover:after {
     margin-top: 2vh;
     margin-left: 1vw;
     border-radius: 10px; 
-}
-
-.texto{
-    font-size: 20px;
-    color: white;
-    position:absolute;
-    margin-left: 27vw;
-    margin-top: -25vh;
-    font-family: 'Old Standard TT', coursive;
-}
-
-.texto2{
-    font-size: 16px;
-    color: white;
-    position:absolute;
-    width: 25vw ;
-    font-family: 'Old Standard TT', coursive;
 }
