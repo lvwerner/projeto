@@ -504,20 +504,32 @@ button:hover:after {
       50% {
         transform: translate3d(-50%,0,0);
       }
-    }                
+    }
 
-    .button2 {
-      width: 50px;
-      height: 50px;
+    /* Botão interrogação */
+    .interrogacao {
+      width: 2vw;
+      height: 4vh;
       border-radius: 50%;
-      background-color: #f1f1f1;
+      background-color:rgba(12, 14, 175, 0.87);
       border: none;
-      color: #000;
+      color: white;
       font-size: 20px;
       text-align: center;
       cursor: pointer;
+      margin: -6.5vh 0 0 10vw;
+      position: absolute;
     }
     
-    .button2:hover {
-      background-color: #ddd;
+    .interrogacao:before {
+      content: "?";
+      width: 2vw;
+      height: 4vh;
+      border-radius: 50%;
+      background-color:rgba(12, 14, 175, 0.87);
+      border: none;
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      cursor: pointer;
     }

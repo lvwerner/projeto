@@ -506,5 +506,31 @@ button:hover:after {
       }
     }                
 
-  
+    /* Botão interrogação */
+    .interrogacao {
+      width: 2vw;
+      height: 4vh;
+      border-radius: 50%;
+      background-color:rgba(12, 14, 175, 0.87);
+      border: none;
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      cursor: pointer;
+      margin: -6.5vh 0 0 10vw;
+      position: absolute;
+    }
+    
+    .interrogacao:before {
+      content: "?";
+      width: 2vw;
+      height: 4vh;
+      border-radius: 50%;
+      background-color:rgba(12, 14, 175, 0.87);
+      border: none;
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      cursor: pointer;
+    }  
   
