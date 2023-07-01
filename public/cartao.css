@@ -270,6 +270,7 @@ body{
     width: 51.3vw;
   }
 
+  /* Botão adicionar */
   .adicionar {
     width: 14vw;
     height: 6vh;
@@ -292,6 +293,7 @@ body{
       color: rgb(233, 231, 231);
   }
 
+/* Cartão */
 .container {
   position: absolute;
   left: 50%;

@@ -299,6 +299,7 @@ body{
     border-radius: 10px; 
 }
 
+/* Linha */
 .linha-horizontal {
     border-top: 2px solid rgb(182, 182, 182);
     width: 50vw;
