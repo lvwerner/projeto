@@ -224,7 +224,7 @@ body{
   .titulo{
     font-size: 25px;
     margin-top: 5vh;
-    margin-left: 2vw;
+    margin-left: 15vw;
     color: black;
     font-family: 'Old Standard TT', coursive;
   }
@@ -251,14 +251,15 @@ body{
   
   /* Contornos */
   .sobrepor{
-    width: 78vw;
+    width: 55vw;
     height: 70vh;
     background-color: #e5e5e9;
     margin: auto;
     margin-top: 5vh;
-    margin-left: 11vw;
+    margin-left: 21vw;
     position: absolute;
     border: 1px solid rgb(182, 182, 182);
+    border-radius: 15px;
   }
   
   .contorno{
@@ -266,17 +267,18 @@ body{
     border-radius: 10px;
     margin: 20px;
     height: 50vh;
-    width: 40vw;
+    width: 51.3vw;
   }
 
   /* Botão adicionar */
   .adicionar {
-    width: 140px;
-    height: 40px;
-    margin-left: 27vh;
-    background-image: linear-gradient( rgba(15, 18, 204, 0.87), rgba(12, 14, 175, 0.87));
+    width: 14vw;
+    height: 6vh;
+    margin-left: 20vw;
+    background-color: rgba(12, 14, 175, 0.87);
     border: none;
     border-radius: 20px;
+    box-shadow: 0 0 5px black;
     color: white;
     font-weight: 600;
     display: flex;
@@ -286,7 +288,7 @@ body{
     cursor: pointer;
   }
   
-  .adicionar > a{
+  .adicionar a{
       text-decoration: none;
       color: rgb(233, 231, 231);
   }
@@ -296,6 +298,7 @@ body{
   position: absolute;
   left: 50%;
   top: 50%;
+  margin-left: 20vw;
   transform: translate(-50%, -50%);
 }
 
@@ -353,5 +356,32 @@ body{
   bottom: 30px;
   font-size: 23px;
   color: white;
+  
 }
-
+.owner input{
+  border: none;
+  background-color: transparent;
+  color: #e5e5e9;
+  width: 16vw;
+  box-shadow: 0 0 3px gray;
+  border-radius:6px;
+}
+.number input{
+  border: none;
+  background-color: transparent;
+  color: #e5e5e9;
+  width: 16vw;
+  box-shadow: 0 0 3px gray;
+  border-radius:6px;
+}
+.mastercard{
+  position: absolute;
+  margin:1vh 0 0 22vw;
+  height: 7vh;
+}
+.cart{
+  position: absolute;
+  color: #e5e5e9;
+  margin: 2vh 0 0 5vw;
+  font-size: 25px;
+}
