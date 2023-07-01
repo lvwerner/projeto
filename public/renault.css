@@ -1,19 +1,19 @@
 body{
-    margin: 0;
+  margin: 0;
 }
 
 /* Estilização do cabeçalho */
 .cabecalho{
-    width: 100%;
-    height: 100px;
-    display: flex;
+  width: 100%;
+  height: 100px;
+  display: flex;
 }
 
 .cabecalho > div {
-    width: 100%;
-    height: 100%;
-    background-color: #0d1117;
-    color: black;
+  width: 100%;
+  height: 100%;
+  background-color: #f2f6fc;
+  color: black;
 }
 
 /* Estilização dos botões */
@@ -25,78 +25,92 @@ body{
 }
 
 .botao > a{
-    color: white;
-    font-family: 'Old Standard TT', coursive;
-    font-size: 10px ;
-    height: 20px;
-    border-radius: 20px;
-    margin-top: 30px;
-    font-size: 15px;
-    color: black;
-    text-align: center;
-    text-decoration: none;
+  color: white;
+  font-family: 'Old Standard TT', coursive;
+  font-size: 10px ;
+  height: 20px;
+  border-radius: 20px;
+  margin-top: 30px;
+  font-size: 15px;
+  color: black;
+  text-align: center;
+  text-decoration: none;
 }
 
 .botao:hover >a{
-    background-color: rgba(22, 141, 107, 0.63);
+  background-color: rgba(22, 141, 107, 0.63);
 }
 
 .botao2{
-    height: 50%;
-    display: inline-grid;
-    grid-template-columns: repeat(2, 130px);
-    grid-gap: 20px;
-    color: white;
-    text-decoration-color: black;
+  height: 50%;
+  display: inline-grid;
+  grid-template-columns: repeat(2, 130px);
+  grid-gap: 20px;
+  color: white;
+  text-decoration-color: black;
 }
 
 .botao2 > a{
-    text-decoration: none;
-    background-color: white;
-    cursor: pointer; 
+  text-decoration: none;
+  background-color: white;
+  cursor: pointer; 
 }
-
+   
 /* Estilização da logo */
 .log1{
-    width: 100px;
-    text-align: center;
+  width: 100px;
+  text-align: center;
 }
 
 .logo{
-    width: 80px;
-    text-align: center;
-    display: block;
-    block-size: 100px;
-    margin-left: 22px;
-    margin-top: 1vh;
+  width: 80px;
+  text-align: center;
+  display: block;
+  block-size: 100px;
+  margin-left: 22px;
+  margin-top: 1vh;
 }
 
 .logo > img{
-    left: 10px;
-    filter: drop-shadow(0 0 3px green);
+  left: 10px;
+  filter: drop-shadow(0 0 3px rgba(12, 14, 175, 0.87));
+}
+
+/* Estilização do rodape */
+.rodape{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background-color: rgba(12, 14, 175, 0.87);
+  color: white;
+  text-align: right;
 }
 
 /* Estilização menu suspenso  */
 .mainmenubtn {
-    color: white;
-    border: none;
-    font-size: 30px;
-    cursor: pointer;
-    padding:20px;
-    margin-top:2px;
-    margin-right: 30px;
-    overflow: hidden;
+  background-color: transparent;
+  color: rgba(12, 14, 175, 0.87);
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  padding:20px;
+  margin-top:2px;
+  margin-right: 30px;
+  overflow: hidden;
 }
 
 .mainmenubtn:hover {
-    left: 100px;
+  background-color: transparent;
+  left: 100px;
 }
 
 .dropdown {
   position: relative;
   display: inline-block;
-  width: 140px;
-  height: 80px;
+  width: 150px;
+  height: 100px;
   align-items: right;
 }
 
@@ -107,9 +121,7 @@ body{
 }
 
 .dropdown-child a {
-  color: black;
-  font-size: 16px;
-  font-family: 'Old Standard TT', coursive;
+  color:black;
   padding: 20px;
   text-decoration: none;
   display: block;
@@ -126,22 +138,34 @@ body{
 
 /* Estilização dos botões */
 .btn {
-  width: 5.5em;
-  height: 2em;
+  width: 10vw;
+  height: 2vh;
   margin: 0.5em;
   top: 2vh;
+  text-align: center;
+  padding-top: 1vh;
+  padding-bottom: 2vh;
   left: 10vw;
-  background: black;
-  color: white;
-  border: none;
-  border-radius: 20px;
+  background: transparent;
+  border: 2px solid red; 
+  border-radius: 15px;
   text-decoration: none;
   font-size: 18px;
-  font-family: 'Old Standard TT', coursive;
   cursor: pointer;
   position: relative;
   z-index: 1;
   overflow: hidden;
+}
+
+.btn:hover a{
+  color: white;
+  transition: all 0.3s;
+}
+
+.btn:hover{
+  background-color: red;
+  color: white;
+  transition: all 0.3s;
 }
 
 button:hover {
@@ -162,7 +186,7 @@ button:after {
 
 button:hover:after {
   transform: skewX(-45deg) scale(1, 1);
-  background: rgba(22, 141, 107, 0.63);
+  background: rgba(40, 25, 177, 0.63);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -175,7 +199,7 @@ button:hover:after {
   top: 2.5vh;
   background: transparent;
   color: rgb(0, 0, 0);
-  border: 2px solid rgb(233, 231, 231);
+  border: 2px solid rgba(12, 14, 175, 0.87);
   border-radius: 15px;
   text-decoration: none;
   font-size: 16px;
@@ -188,12 +212,12 @@ button:hover:after {
 
 .anone{
   text-decoration: none;
-  color: white;
+  color: red;
 }
 
 .anone2{
   text-decoration: none;
-  color: rgb(233, 231, 231);
+  color: black;
 }
 
 /* Estilização do rodape */
@@ -203,7 +227,7 @@ button:hover:after {
   bottom: 0;
   width: 100%;
   height: 20px;
-  background-color: rgba(91, 202, 171, 0.829);
+  background-color:  rgba(12, 14, 175, 0.87);
   color: white;
   text-align: right;
 }
@@ -212,7 +236,7 @@ button:hover:after {
 .principal {
   width: 100%;
   height: 87.3vh ;
-  background-color: #0d1117;
+  background-color: #f2f6fc;
   display: flex;
 }
 
@@ -220,11 +244,12 @@ button:hover:after {
 .produto{
   height: 75vh;
   width: 65vw;
-  border: 1.5px solid white;
+  border: 1.5px solid #e5e5e9;
+  background-color: #e5e5e9;
   position: absolute;
   margin: 2vh 0 0 4vw;
   border-radius: 15px;
-  box-shadow: 0 0 7px rgb(0, 196, 121);
+  box-shadow: 0 0 7px  rgba(12, 14, 175, 0.87);
   display: grid;
   grid-template-columns: repeat(2, 45vw);
   grid-template-rows: repeat(2, 38vh);
@@ -233,7 +258,7 @@ button:hover:after {
 .contorno{
   height: 33vh;
   width: 24vw;
-  box-shadow: 0 0 7px rgb(0, 196, 121);
+  box-shadow: 0 0 7px  rgba(12, 14, 175, 0.87);
   margin: 2vh 0 0 -6vw;
   border-radius: 15px;
 }
@@ -242,9 +267,10 @@ button:hover:after {
   position: absolute;
   height: 39vh;
   width: 18vw;
-  box-shadow: 0 0 7px rgb(0, 196, 121);
+  box-shadow: 0 0 7px  rgba(12, 14, 175, 0.87);
   margin: 17vh 0 0 67vw;
   border-radius: 15px;
+  background-color: #e5e5e9;
 }
 
 /* Carrossel de imagens */
@@ -253,11 +279,11 @@ button:hover:after {
   height: 40vh;
   height: 60vh;
   width: 80vw;
-  border: 1.5px solid white;
+  border: 1.5px solid rgba(12, 14, 175, 0.87);
   position: absolute;
   margin: 25vh 0 0 10vw;
   border-radius: 15px;
-  box-shadow: 0 0 7px rgb(0, 196, 121);
+  box-shadow: 0 0 7px rgba(12, 14, 175, 0.87);
   display: flex;
 }
 
@@ -266,7 +292,7 @@ button:hover:after {
   height: 35vh;
   overflow: hidden;
   position: relative;
-  border: 2px solid white;
+  border: 2px solid rgba(12, 14, 175, 0.87);
   border-radius: 10px;
   margin: 2vh 0 0 2vw;
 }
@@ -325,18 +351,19 @@ button:hover:after {
   position: relative;
   margin: 0 0 0 2vw;
   font-family: 'Old Standard TT', coursive;
+  color: black;
 }
 
 .titulo{
   font-size: 19.4px;
   font-family:'Old Standard TT', coursive;
-  color: white;
+  color: black;
   margin-left: 15px;
   margin-top: 10px;
 }
 
 .texto2{
-  color: white;
+  color: black;
   font-family: 'Old Standard TT', coursive;
   font-size: 16px;
   margin-left: 5px;
@@ -344,7 +371,7 @@ button:hover:after {
 }
 
 .texto3{
-  color: white;
+  color: black;
   font-family: 'Old Standard TT', coursive;
   font-size: 16px;
   margin-top: 5px;
@@ -353,15 +380,14 @@ button:hover:after {
 .titulo2{
   font-size: 19px;
   font-family: 'Old Standard TT', coursive;
-  color: white;
+  color: black;
   margin-left: 40px;
   margin-top: 25px;
   font-size: 25px;
-  color: white;
 }
 
 .texto{
-  color: white;
+  color: black;
   font-family: 'Old Standard TT', coursive;
   font-size: 18px;
   text-align: center;
@@ -376,7 +402,7 @@ button:hover:after {
 }
 
 .texto5{
-  color: white;
+  color: black;
   font-family: 'Old Standard TT', coursive;
   font-size: 15px;
   margin-top: 5px;
@@ -391,7 +417,7 @@ button:hover:after {
   margin-top: 1vh;
   margin-left: 17vh;
   margin-bottom: 0;
-  background-image: linear-gradient(rgb(22, 141, 107), rgb(22, 141, 107));
+  background-image: linear-gradient( rgba(15, 18, 204, 0.87), rgba(12, 14, 175, 0.87));
   border: none;
   border-radius: 15px;
   font-weight: 600;
