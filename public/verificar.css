@@ -12,7 +12,7 @@ body{
 .cabecalho > div {
     width: 100%;
     height: 100%;
-    background-color: #f2f6fc;
+    background-color:#eff5ff;
     color: black;
 }
 
@@ -246,7 +246,7 @@ button:hover:after {
 .principal {
     width: 100%;
     height: 100vh;
-    background-color:#f2f6fc;
+    background-color:#eff5ff;
 }
 
 /* Estilização do formulário */
@@ -257,13 +257,13 @@ button:hover:after {
     display: flex;
     flex-direction: column;
     border-radius: 2.5em;
-    background-color: #e5e5e9;
+    background-color: rgb(231, 231, 231);
     padding: 15px;
-    margin-top: 8%;
-    margin-left: 37%;
+    margin-top:15vh;
+    margin-left: 37vw;
     filter: drop-shadow(0 0 5px rgb(255, 255, 255));
     border-radius: 10px;
-    border: 1px solid rgb(182, 182, 182);
+    border: 1px solid rgb(199, 197, 197);
 }
   
 .input2 {
@@ -274,7 +274,7 @@ button:hover:after {
     border-radius: 0.75em;
     border: none;
     outline: none;
-    background-color:  rgb(233, 231, 231);;
+    background-color:  rgb(233, 231, 231);
     color: black;
     font-size: 15px;
     font-weight: bold;
