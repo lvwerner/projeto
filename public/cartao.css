@@ -1,30 +1,30 @@
 body{
     margin: 0;
-}
-
-/* Estilização do cabeçalho */
-.cabecalho{
+  }
+  
+  /* Estilização do cabeçalho */
+  .cabecalho{
     width: 100%;
     height: 100px;
     display: flex;
-}
-
-.cabecalho > div {
+  }
+  
+  .cabecalho > div {
     width: 100%;
     height: 100%;
     background-color: #f2f6fc;
     color: black;
-}
-
-/* Estilização dos botões */
-.botao {
+  }
+  
+  /* Estilização dos botões */
+  .botao {
     height: 80%;
     display: inline-grid;
     grid-template-columns: repeat(4, 70px);
     grid-gap: 30px;   
-}
-
-.botao > a{
+  }
+  
+  .botao > a{
     color: white;
     font-family: 'Old Standard TT', coursive;
     font-size: 10px ;
@@ -35,49 +35,49 @@ body{
     color: black;
     text-align: center;
     text-decoration: none;
-}
-
-.botao:hover >a{
+  }
+  
+  .botao:hover >a{
     background-color: rgba(22, 141, 107, 0.63);
-}
-
-.botao2{
+  }
+  
+  .botao2{
     height: 50%;
     display: inline-grid;
     grid-template-columns: repeat(2, 130px);
     grid-gap: 20px;
     color: white;
     text-decoration-color: black;
-}
-
-.botao2 > a{
+  }
+  
+  .botao2 > a{
     text-decoration: none;
     background-color: white;
     cursor: pointer; 
-}
+  }
      
-/* Estilização da logo */
-.log1{
+  /* Estilização da logo */
+  .log1{
     width: 100px;
     text-align: center;
-}
-
-.logo{
+  }
+  
+  .logo{
     width: 80px;
     text-align: center;
     display: block;
     block-size: 100px;
     margin-left: 22px;
     margin-top: 1vh;
-}
-
-.logo > img{
+  }
+  
+  .logo > img{
     left: 10px;
     filter: drop-shadow(0 0 3px rgba(12, 14, 175, 0.87));
-}
-
-/* Estilização do rodape */
-.rodape{
+  }
+  
+  /* Estilização do rodape */
+  .rodape{
     position: fixed;
     left: 0;
     bottom: 0;
@@ -86,10 +86,10 @@ body{
     background-color: rgba(12, 14, 175, 0.87);
     color: white;
     text-align: right;
-}
-
-/* Estilização menu suspenso  */
-.mainmenubtn {
+  }
+  
+  /* Estilização menu suspenso  */
+  .mainmenubtn {
     background-color: transparent;
     color: rgba(12, 14, 175, 0.87);
     border: none;
@@ -99,45 +99,45 @@ body{
     margin-top:2px;
     margin-right: 30px;
     overflow: hidden;
-}
-
-.mainmenubtn:hover {
+  }
+  
+  .mainmenubtn:hover {
     background-color: transparent;
     left: 100px;
-}
-
-.dropdown {
+  }
+  
+  .dropdown {
     position: relative;
     display: inline-block;
     width: 150px;
     height: 100px;
     align-items: right;
-}
-
-.dropdown-child {
+  }
+  
+  .dropdown-child {
     display: none;
     background-color: white;
     min-width: 20px;
-}
-
-.dropdown-child a {
+  }
+  
+  .dropdown-child a {
     color:black;
     padding: 20px;
     text-decoration: none;
     display: block;
-}
-
-.dropdown:hover .dropdown-child {
+  }
+  
+  .dropdown:hover .dropdown-child {
     display: block;
-}
-
-.menu{
+  }
+  
+  .menu{
     width: 0px;
     text-align: right;
-}
-
-/* Estilização dos botões */
-.btn {
+  }
+  
+  /* Estilização dos botões */
+  .btn {
     width: 10vw;
     height: 2vh;
     margin: 0.5em;
@@ -155,24 +155,24 @@ body{
     position: relative;
     z-index: 1;
     overflow: hidden;
-}
-
-.btn:hover a{
+  }
+  
+  .btn:hover a{
     color: white;
     transition: all 0.3s;
-}
-
-.btn:hover{
+  }
+  
+  .btn:hover{
     background-color: red;
     color: white;
     transition: all 0.3s;
-}
-
-button:hover {
+  }
+  
+  button:hover {
     color: black;
-}
-
-button:after {
+  }
+  
+  button:after {
     content: "";
     position: absolute;
     z-index: -1;
@@ -182,16 +182,16 @@ button:after {
     bottom: 0;
     transform: skewX(-45deg) scale(0, 1);
     transition: all 0.5s;
-}
-
-button:hover:after {
+  }
+  
+  button:hover:after {
     transform: skewX(-45deg) scale(1, 1);
     background: rgba(40, 25, 177, 0.63);
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
-}
-
-.btn2 {
+  }
+  
+  .btn2 {
     width: 5.5em;
     height: 2em;
     margin: 0.5em;
@@ -208,85 +208,148 @@ button:hover:after {
     position: relative;
     z-index: 1;
     overflow: hidden;
-}
-
-.anone{
+  }
+  
+  .anone{
     text-decoration: none;
     color: red;
-}
-
-.anone2{
+  }
+  
+  .anone2{
     text-decoration: none;
     color: black;
-}
+  }
+  
+  /* Textos */
+  .titulo{
+    font-size: 25px;
+    margin-top: 5vh;
+    margin-left: 2vw;
+    color: black;
+    font-family: 'Old Standard TT', coursive;
+  }
+  
+  .texto{
+    font-size: 18px;
+    color:black;
+    margin: 0 0 0 1vw;
+    font-family: 'Old Standard TT', coursive;
+  }
 
-/* Div fundo */
-.principal {
+  .texto2{
+    font-size: 18px;
+    color:white;
+    font-family: 'Old Standard TT', coursive;
+  }
+  
+  /* Div fundo */
+  .principal {
     width: 100%;
     height: 100vh;
     background-color: #f2f6fc;
-}
-
-/* Textos */
-.titulo {
-    position: relative;
-    font-size: 40px;
-    font-family: 'Old Standard TT', coursive;
-    color: rgba(12, 14, 175, 0.87);
-    width: 25%;
-    text-align: center;
-    align-items: center;
-    margin-top: 2vh;
-    margin-left: 3vw;
-}
-
-.subtitulo {
-    position:relative;
-    font-size: 16px;
-    font-family: 'Old Standard TT', coursive;
-    margin: 12px 0 0 -80px;
-    width: 60vh;
-    height: 50vh;
-    color:  black;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.textos {
-    margin-left: 60px;
-    font-family: 'Old Standard TT', coursive;
-}
-
-/* Div fundo */
-.fundo3 {
-    width: 66vw;
-    height: 70%;
+  }
+  
+  /* Contornos */
+  .sobrepor{
+    width: 78vw;
+    height: 70vh;
     background-color: #e5e5e9;
-    text-align: center;
-    margin-top: 3vh;
-    margin-left: 14vw;
-    position: fixed;
-    display: grid;
-    grid-template-columns: auto auto;
-    border-radius: 10px;
+    margin: auto;
+    margin-top: 5vh;
+    margin-left: 11vw;
+    position: absolute;
     border: 1px solid rgb(182, 182, 182);
-}
-
-/* Imagem */
-.foto {
-    display: grid; 
-    grid-template-columns: 400px 400px; 
-    gap: 10px;
-    width: 110vh;
-    height: 80vh; 
-    margin-left: 2vw;
-}
-
-.nós > img{
-    border: solid 1px rgba(12, 14, 175, 0.87);
+  }
+  
+  .contorno{
+    border: solid 2px  rgba(12, 14, 175, 0.87);
     border-radius: 10px;
-    margin-left: -6vw;
-    margin-top: -0.5vh;
-    box-shadow: 0 0 20px rgba(12, 14, 175, 0.87), 0 0 20px rgba(12, 14, 175, 0.87);
+    margin: 20px;
+    height: 50vh;
+    width: 40vw;
+  }
+
+  .adicionar {
+    width: 140px;
+    height: 40px;
+    margin-left: 27vh;
+    background-image: linear-gradient( rgba(15, 18, 204, 0.87), rgba(12, 14, 175, 0.87));
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    cursor: pointer;
+  }
+  
+  .adicionar > a{
+      text-decoration: none;
+      color: rgb(233, 231, 231);
+  }
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
+
+.card {
+  background: radial-gradient(circle, black, black 100%);
+  width: 27vw;
+  height: 32vh;
+  border-radius: 20px;
+  margin-left: -33vw;
+  position: relative;
+  box-shadow: 3px 3px 17px 0px rgba(0, 0, 0, 0.55);
+}
+
+.card .remove, .card .logo {
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.card .remove {
+  top: 30px;
+  right: 30px;
+  opacity: .9;
+  color: black;
+}
+
+.card .remove:hover {
+  color: #f06b5d;
+}
+
+.card .logo {
+  top: 20px;
+  left: 30px;
+  font-size: 3em;
+  opacity: 1;
+}
+
+.card .number, .card .owner {
+  display: block;
+  position: absolute;
+  left: 30px;
+  cursor: default;
+  color: black;
+  opacity: .9;
+  transition: color .7s ease-out;
+}
+
+.card .number {
+  bottom: 60px;
+  font-size: 23px;
+  color: white;
+}
+
+.card .owner {
+  bottom: 30px;
+  font-size: 23px;
+  color: white;
+}
+
